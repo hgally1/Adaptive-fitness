@@ -168,7 +168,7 @@ a:focus {
 
 .page-title{
     padding: 60px 0;
-    background-image: url('https://demo.themeum.com/html/corlate/images/page-title.png');
+    background-image: url('https://unsplash.com/photos/aoz8a7jO0QI');
 }
 
 .page-title h1{
@@ -529,11 +529,9 @@ input.search-form:hover {
 }
 
 .slider-img-1 {
-    background-image: url(https://demo.themeum.com/html/corlate/images/slider/bg1.jpg);
+    background-image: url(https://unsplash.com/photos/aoz8a7jO0QI);
 }
-.slider-img-2 {
-    background-image: url(https://demo.themeum.com/html/corlate/images/slider/bg2.jpg);
-}
+
 
 #feature {
     padding-bottom: 40px;

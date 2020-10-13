@@ -17,12 +17,38 @@ class Index extends Component {
 				<div>
 					<header id="header">
 				        <Navbar/>
+
+						<nav className="navbar navbar-inverse" role="banner">
+				            <div className="container">
+				                <div className="navbar-header">
+				                    <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+				                        <span className="sr-only">Toggle navigation</span>
+				                        <span className="icon-bar"></span>
+				                        <span className="icon-bar"></span>
+				                        <span className="icon-bar"></span>
+				                    </button>
+				                   
+				                    <Link to="/" className="navbar-brand"><img src="" alt="logo"/></Link>
+				                </div>
+
+				                <div className="collapse navbar-collapse navbar-right">
+				                    <ul className="nav navbar-nav">
+				                        <li className="home-nav active"><Link to="/">Home</Link></li>
+				                        <li className=""><Link to="/about">About Us</Link></li>
+				                        <li className=""><Link to="/services">Services</Link></li>
+				                        <li className=""><Link to="/guides">Guides</Link></li>
+				                        <li className=""><Link to="/contact">Contact</Link></li>
+				                    </ul>
+				                </div>
+				            </div>
+				        </nav>
+	    			
 	    			</header>
 
 					<Route path="/" exact component={Home} />
 					<Route path="/about/" component={About} />
 					<Route path="/services/" component={Services} />
-					<Route path="/Guides/" component={Guides} />
+					<Route path="/guides/" component={Guides} />
 					<Route path="/contact/" component={Contact} />
 
 					<Footer/>
