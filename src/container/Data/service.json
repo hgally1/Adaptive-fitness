@@ -1,0 +1,14 @@
+[
+	{
+		"id" : 0,
+		"title": "Fitness",
+		"desc": "Personal Physical Training",
+		"img": "https://unsplash.com/photos/w6BHqa8ukc0"
+	},
+	{
+		"id": 1,
+		"title": "Nutrition",
+		"desc": "Personalized and adaptive nutrition coaching",
+		"img": "https://unsplash.com/photos/v77vc1iAK18"
+	}
+]
