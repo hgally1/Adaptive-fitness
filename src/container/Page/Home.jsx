@@ -23,6 +23,12 @@ class Home extends Component {
 					</div>
 				</div>
 
+				<section id="adaptfit" >
+					<div className="container">
+						<h1>ADAPTIVE FITNESS</h1>
+					</div>
+				</section>
+
 {/* Coaching Needs */}
                 <section id="services" className="service-item">
 			        <div className="container">
