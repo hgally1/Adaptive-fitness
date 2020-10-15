@@ -28,7 +28,7 @@ class Index extends Component {
 				                        <span className="icon-bar"></span>
 				                    </button>
 				                   
-									<Link to="/" className="navbar-brand"><img src={require('../../images/AF_transparent.png')} className="logo" height='250' width='250' /></Link>
+									<Link to="/" className="navbar-brand"><img src={require('../../images/AF_logo.png')} className="logo" height='250' width='250'  /></Link>
 				                </div>
 
 				                <div className="collapse navbar-collapse navbar-right">

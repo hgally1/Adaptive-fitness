@@ -6,31 +6,39 @@ class Home extends Component {
         return (
             <div className="body homepage">
 				<div id="main" className="img-1">
-					<div className="container">
+					<div className="home-container">
 						<div className="row">
-							<div className="col-md-7">
-								<div className="content">
-									<h1 className="">Adaptive Fitness</h1>
-									<div className="">
-										Fitness and Nutrition Coaching
+							<div className="">
+								<div className="home-content" >
+									<h1 className="home-title">Adaptive Fitness</h1>
+									<p className="home-title">
+										Personalized Fitness and Nutrition Coaching
+									</p>
+									<div className="home-btns">
+										<a className="btn" href="#">Learn More</a>
+										<a className="btn" href="#">Get Started</a>
 									</div>
-									<a className="btn" href="#">Learn More</a>
-									<a className="btn" href="#">Get Started</a>
 								</div>
 							</div>
 
 						</div>
 					</div>
 				</div>
-
+{/* small section on what adaptive fitness is about */}
 				<section id="adaptfit" >
 					<div className="container">
-						<h1>ADAPTIVE FITNESS</h1>
+						<div className="center fadeInDown">
+							<div className="home-info">
+								<h2>Why Adaptive Fitness?</h2>
+								------------------------                  <img src={require('../../images/AF_logo.png')} className="logo" height='250' width='250' />               ------------------------
+								<p className="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
+							</div>
+						</div>
 					</div>
 				</section>
 
 {/* Coaching Needs */}
-                <section id="services" className="service-item">
+                <section id="feature" className="service-item">
 			        <div className="container">
 			            <div className="center fadeInDown">
 			                <h2>CHOOSE YOUR COACHING NEED</h2>
@@ -58,7 +66,7 @@ class Home extends Component {
 			        </div>
 			    </section>
 {/* Meet Jai */}
-			    <section id="feature">
+			    <section id="services" >
 			        <div className="container">
 			            <div className="center fadeInDown">
 			                <h2>Meet Jai</h2>

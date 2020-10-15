@@ -20,19 +20,20 @@ class Services extends Component {
 			            	<ServicesSection
 			                	title= "Fitness"
                                 desc= "Personal Physical Training"
-                                img= "https://unsplash.com/photos/w6BHqa8ukc0"
+                                img= "https://images.unsplash.com/photo-1562771242-a02d9090c90c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=alora-griffiths-zEAX0E0KJxs-unsplash.jpg"
 			                />
 			                <ServicesSection
 			                	title="Nutrition"
 			                	desc= "Personalized and adaptive nutrition coaching"
-	                            img= "https://unsplash.com/photos/v77vc1iAK18"
+	                            img= "https://images.unsplash.com/photo-1587678711204-ca6d3d2f1f3b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=alex-motoc-v77vc1iAK18-unsplash.jpg&w=640"
 			                />
 			                <ServicesSection
 			                	title="Fitness & Nutrition"
 			                	desc="Personalized and adaptive fitness & nutrition coaching"
-			                	img="https://unsplash.com/photos/v77vc1iAK18"
+			                	img="https://images.unsplash.com/photo-1558017487-06bf9f82613a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=derick-mckinney-__QqvTI5Edc-unsplash.jpg"
 			                />
 			            </div>
+
                     </div>
 			    </section>
 

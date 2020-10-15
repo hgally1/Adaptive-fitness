@@ -2,15 +2,15 @@ import React from 'react';
 
 const ServicesSection = (props) => {
 	return (
-		<div className="col-sm-6 col-md-4">
-			<div className="media services-wrap fadeInDown">
-			    <div className="pull-left">
-			        <img className="img-responsive" src={props.img} alt=""/>
-			    </div>
-			    <div className="media-body">
-			        <h3 className="media-heading">{props.title}</h3>
-			        <p>{props.desc}</p>
-			    </div>
+		<div className="features">
+			<div className="col-md-3 col-sm-4 fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+				<div className="feature-wrap">
+					<div className="icon">
+						<img src={props.img} className={props.img}></img>
+					</div>
+					<h2>{props.title}</h2>
+					<p>{props.desc}</p>
+				</div>
 			</div>
 		</div>
 	)
