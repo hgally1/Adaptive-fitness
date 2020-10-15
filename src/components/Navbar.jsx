@@ -7,7 +7,7 @@ const Navbar = () => {
 				                <div className="row">
 				                    <div className="col-sm-6 col-xs-12">
 				                        <div className="top-number">
-				                            <p><i className="fa fa-phone-square"></i> +0123 456 70 90</p>
+				                            <p><i className="fa fa-phone-square"></i> 555-555-5555</p>
 				                        </div>
 				                    </div>
 				                    <div className="col-sm-6 col-xs-12">
