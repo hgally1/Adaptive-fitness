@@ -6,10 +6,10 @@ class Services extends Component {
         return (
             <div className="body">
 				<div className="page-title">
-			        <h1>Services</h1>
+			        <h1>Services</h1> 
 			    </div>
 
-			    <section id="services" className="service-item">
+			    <section id="features" className="service-item">
 			        <div className="container">
 			            <div className="center fadeInDown">
 			                <h2>Our Service</h2>
@@ -40,7 +40,7 @@ class Services extends Component {
 			    <section id="partner">
 			        <div className="container">
 			            <div className="center fadeInDown">
-			                <h2>Our Partners</h2>
+			                <h2>Sign up</h2>
 			                <p className="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
 			            </div>
 			            

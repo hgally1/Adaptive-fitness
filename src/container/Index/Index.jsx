@@ -28,13 +28,15 @@ class Index extends Component {
 				                        <span className="icon-bar"></span>
 				                    </button>
 				                   
-									<Link to="/" className="navbar-brand"><img src={require('../../images/AF_logo.png')} className="logo" height='250' width='250'  /></Link>
+									<a href="#/ " className="navbar-brand">
+										<img src={require('../../images/AF_logo.png')} className="logo" height='250' width='250'  />
+									</a>
 				                </div>
 
 				                <div className="collapse navbar-collapse navbar-right">
 				                    <ul className="nav navbar-nav">
 				                        <li className="home-nav active"><Link to="/">Home</Link></li>
-				                        <li className=""><Link to="/about">About Us</Link></li>
+				                        <li className=""><Link to="/about">About</Link></li>
 				                        <li className=""><Link to="/services">Services</Link></li>
 				                        <li className=""><Link to="/guides">Guides</Link></li>
 				                        <li className=""><Link to="/contact">Contact</Link></li>
@@ -51,7 +53,23 @@ class Index extends Component {
 					<Route path="/guides/" component={Guides} />
 					<Route path="/contact/" component={Contact} />
 
-					<Footer/>
+					<footer id="footer">
+						{/* <Footer /> */}
+						
+							<div className="container fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+								<div className="row">
+									<div className="col-md-2">
+										<a href="#" className="footer-logo">
+										<img src={require('../../images/AF_transparent.png')} className="logo" height='250' width='250'  />
+										</a>
+										
+									</div>
+									
+									<Footer />
+								</div>
+							</div>
+					</footer>
+					
 				</div>
 			</Router>
 		)
