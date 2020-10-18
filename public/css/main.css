@@ -275,7 +275,7 @@ input.search-form:hover {
 .navbar {
     border-radius: 0;
     margin-bottom: 0;
-    background: #fff;
+    background: rgb(14, 13, 13);
     
 }
 .navbar::before{
@@ -1307,7 +1307,7 @@ a.accordion-toggle i {
 }
 
 #team-area{
-    background-color: #FAFAFA;
+    background-color: #0f43a3;
 }
 
 .single-team img{
