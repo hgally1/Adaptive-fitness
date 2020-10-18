@@ -12,7 +12,7 @@ class Services extends Component {
 			    <section id="features" className="service-item">
 			        <div className="container">
 			            <div className="center fadeInDown">
-			                <h2>Our Service</h2>
+			                {/* <h2>Our Service</h2> */}
 			                <p className="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
 			            </div>
 

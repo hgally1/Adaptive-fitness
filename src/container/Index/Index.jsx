@@ -6,7 +6,7 @@ import Navbar from '../../components/Navbar';
 import Home from '../Page/Home';
 import About from '../Page/About';
 import Services from '../Page/Services';
-import Guides from '../Page/Guides';
+import Login from '../Page/Login';
 import Contact from '../Page/Contact';
 
 class Index extends Component {
@@ -16,7 +16,6 @@ class Index extends Component {
 			<Router>
 				<div>
 					<header id="header">
-				        <Navbar/>
 
 						<nav className="navbar navbar-inverse" role="banner">
 				            <div className="container">
@@ -38,8 +37,9 @@ class Index extends Component {
 				                        <li className="home-nav active"><Link to="/">Home</Link></li>
 				                        <li className=""><Link to="/about">About</Link></li>
 				                        <li className=""><Link to="/services">Services</Link></li>
-				                        <li className=""><Link to="/guides">Guides</Link></li>
 				                        <li className=""><Link to="/contact">Contact</Link></li>
+										<li className=""><Link to="/login">Login</Link></li>
+										<li><a href="#"><i className="fa fa-instagram"></i></a></li>
 				                    </ul>
 				                </div>
 				            </div>
@@ -50,8 +50,9 @@ class Index extends Component {
 					<Route path="/" exact component={Home} />
 					<Route path="/about/" component={About} />
 					<Route path="/services/" component={Services} />
-					<Route path="/guides/" component={Guides} />
+					
 					<Route path="/contact/" component={Contact} />
+					<Route path="/login/" component={Login} />
 
 					<footer id="footer">
 						{/* <Footer /> */}

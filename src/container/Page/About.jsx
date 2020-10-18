@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import AboutSection from '../../components/About';
+import AboutSection from '../../components/AboutSection';
 
 class About extends Component {
     render() {
@@ -16,10 +16,8 @@ class About extends Component {
 			                	img=""
 			                	name="Jai"
 			                	job=""
-			                	facebook="#"
-			                	twitter="#"
-			                	linkedin="#"
-			                	pinterest="#"
+			                	instagram="#"
+			                	
 			                />
                         </div>
                     </div>
