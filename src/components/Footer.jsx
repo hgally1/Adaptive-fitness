@@ -5,36 +5,49 @@ import React from 'react';
 const Footer = () => {
 	return (
 		<div>
-			
-			<section id="bottom">
-			    <div className="container fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+			{/* <section id="bottom">
+				<div className="col-md-10">
 			        <div className="row">
-			            <div className="col-md-2">
-			               <a href="#" className="footer-logo">
-						   {/* <img src={props.img} className={props.img}></img>  */}
-			                </a>
-			            </div>
-			            <div className="col-md-10">
-			                <div className="row">
-			                    <div className="col-md-3 col-sm-6">
-			                        <div className="widget">
-			                            <h3>Site Map</h3>
-			                            <ul>
-											<li><a href="#">Home</a></li>
-											<li><a href="#">About</a></li>
-											<li><a href="#">Services</a></li>
-											<li><a href="#">Contact</a></li>
-											<li><a href="#">Login</a></li>
-										</ul>
-			                        </div>
-			                    </div>
+						<a href="#" className="footer-logo">
+							<img src={require('../../images/AF_transparent.png')} className="logo" height='250' width='250'  />
+						</a>
+			            <div className="col-md-3">
+			                <div className="widget">
+								<h3>Site Map</h3>
+								<ul>
+									<li><a href="#">Home</a></li>
+									<li><a href="#">About</a></li>
+									<li><a href="#">Services</a></li>
+									<li><a href="#">Contact</a></li>
+									<li><a href="#">Login</a></li>
+								</ul>
 							</div>
-							
+						</div>
+						<div className="col-md-3">
+							<div className="widget">
+								<h3>Site Map</h3>
+								<ul>
+									<li><a href="#">Home</a></li>
+									<li><a href="#">About</a></li>
+									<li><a href="#">Services</a></li>
+									<li><a href="#">Contact</a></li>
+									<li><a href="#">Login</a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
-			</section>
 			                    
+			</section>
+			<div id="footer" className="midnight-blue">
+				<div className="container">
+					<div className="row">
+						<div className="col-sm-12 text-center">
+							&copy; 2019 <a target="_blank" href="http://shapebootstrap.net/" title="Free Twitter Bootstrap WordPress Themes and HTML templates">ShapeBootstrap</a>. All Rights Reserved.
+						</div>
+					</div>
+				</div>
+			</div> */}
 		</div>
 	)
 }

@@ -425,17 +425,26 @@ input.search-form:hover {
 }
   
 #main h1{
-    color: red;
-    font-size:60px;
+    /* color: red; */
+    font-size:70px;
     padding: 0;
     margin-bottom: 5px;
     margin-top: 70px;
-    
+    color: #c4330b;
+   
+    text-shadow: 2px 2px 0 #0C0503, 2px -2px 0 #0C0503, -2px 2px 0 #0C0503, -2px -2px 0 #0C0503, 2px 0px 0 #0C0503, 0px 2px 0 #0C0503, -2px 0px 0 #0C0503, 0px -2px 0 #0C0503;
+    color: #c4330b;;
+   
 }
+    
+
   
 #main p{
     font-size:20px;
     margin: 0;
+    color: #fff;
+    text-shadow: 2px 2px 0 #0C0503, 2px -2px 0 #0C0503, -2px 2px 0 #0C0503, -2px -2px 0 #0C0503, 2px 0px 0 #0C0503, 0px 2px 0 #0C0503, -2px 0px 0 #0C0503, 0px -2px 0 #0C0503;
+    color: #fff;
 } 
 
 
@@ -467,59 +476,29 @@ input.search-form:hover {
     
 }
 
-#feature .row{
-    display: flex;
-    /* justify-content: space-evenly; */
-    /* align-content: center; */
-    margin-left: 10px;
-    
-}
-
-#feature .btns {
-    display:flex;
-    justify-content: space-around;
-    /* align-content: flex-start; */
-    /* padding-left: 60px;
-    padding-right: 100px; */
-}
 
 
 
 .features .feature-wrap {
-    padding: 60px 60px;
-    
     margin-bottom: 35px;
-    display:flex;
-     
-    flex-direction: column; 
-    justify-content: space-between; 
-    
-    
-    
 }
 
 .features .feature-wrap .icon {
-    display:flex;
-    justify-content: space-around; 
-    flex-direction: column; 
-    text-align: center;
+    
     width: 230px;
     height: 230px;
     text-align: center;
     line-height: 40px;
     color: #D0D0D0;
-    /* border: 1px solid #D0D0D0;*/
+
     font-size: 20px;
     border-radius: 4px; 
     -webkit-transition: .4s;
     transition: .4s;
     margin-bottom: 25px;
-    margin-left: 20px;
+    
 }
 
-/* .features .feature-wrap .icon:first-child {
-    margin: ;
-} */
 
 .features .feature-wrap:hover .icon {
     color: #ffffff;
@@ -540,6 +519,8 @@ input.search-form:hover {
     line-height: 26px;
     color: #707070;
 }
+
+
 
 /* TESTIMONIALS */
 
@@ -1743,8 +1724,38 @@ textarea#message {
 
 
 /*********************
-****blog page css*****
+****Login page css*****
 **********************/
+
+#login-page {
+    background-image: url(https://images.unsplash.com/photo-1507652955-f3dcef5a3be5?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=sydney-rae-geM5lzDj4Iw-unsplash.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    background-position: 50% 50%;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+
+}
+
+.login h2 {
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+.login-card {
+    min-height: 60vh;
+    
+}
+
+
+
+
+
+
+
 
 .widget {
     margin-bottom: 30px;

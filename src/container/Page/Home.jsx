@@ -8,7 +8,7 @@ class Home extends Component {
 				<div id="main" className="img-1">
 					<div className="container">
 						<div className="row">
-							<div className="">
+							<div className="center fadeInDown">
 								<div className="content" >
 									<h1 className="home-title">Adaptive Fitness</h1>
 									<p className="home-title">
@@ -31,7 +31,12 @@ class Home extends Component {
 							<div className="home-info">
 								<h2>Why Adaptive Fitness?</h2>
 								------------------------                  <img src={require('../../images/AF_logo.png')} className="logo" height='250' width='250' />               ------------------------
-								<p className="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
+								<p className="lead">MOST FITNESS AND DIET PLANS FAIL
+BECAUSE THEY'RE TOO GENERIC. HOW GOOD WOULD IT FEEL TO FINALLY HAVE THE BODY YOU WANT AND NEVER STRESS ABOUT WHAT TO EAT OR HOW TO EXERCISE EVER AGAIN?.... 
+My mission is simple: To bring an effective, personalized approach to health and fitness that anyone can use to get in better shape — even if they’ve tried and failed before. You are the focus.
+You'll interact with me every week. Everything is customized specifically for you. 
+Take the stress out of fitness and nutrition! No more worrying about what to eat, how to exercise, or what to do next. Your only job is to show up and follow the plan. I won't deprive you of the stuff you love. Instead of crazy-strict dieting rules, we'll work together to create a simple plan that gets great results—without making you the “weird person” at dinner. 
+Built for results that don’t disappear. I don’t want you to quit before you hit your goals. I also believe in solutions that last. I want you to get great results now — that you keep for the rest of your life. </p>
 							</div>
 						</div>
 					</div>
@@ -42,40 +47,45 @@ class Home extends Component {
 			        <div className="container">
 			            <div className="center fadeInDown">
 			                <h2>CHOOSE YOUR COACHING NEEDS</h2>
-			                <p className="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
+			                <p className="lead">Unlike most coaching services, my fitness and nutrition programs are customized to your schedule, your preferences, and your level of experience.</p>
 			            </div>
 
-						{/* <div className="col-md-3"> */}
-			         	 <div className="row">
+						{/* <div className="center"> */}
+			         	 	<div className="row">
 						 
-			            	<ServicesSection
-			                	title= "Fitness"
-                                desc= "Personal Physical Training"
-								img= "https://images.unsplash.com/photo-1562771242-a02d9090c90c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=alora-griffiths-zEAX0E0KJxs-unsplash.jpg"
-			                />
+								<ServicesSection
+									title= "Fitness"
+									desc= "Personal Physical Training"
+									img= "https://images.unsplash.com/photo-1562771242-a02d9090c90c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=alora-griffiths-zEAX0E0KJxs-unsplash.jpg"
+								/>
+								
+								
+								<ServicesSection
+									title="Nutrition"
+									desc= "Personalized and adaptive nutrition coaching"
+									img= "https://images.unsplash.com/photo-1587678711204-ca6d3d2f1f3b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=alex-motoc-v77vc1iAK18-unsplash.jpg&w=640"
+								/>
+								
+								<ServicesSection
+									title="Fitness & Nutrition"
+									desc="Personalized and adaptive fitness & nutrition coaching"
+									img="https://images.unsplash.com/photo-1558017487-06bf9f82613a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=derick-mckinney-__QqvTI5Edc-unsplash.jpg"
 							
-							
-			                <ServicesSection
-			                	title="Nutrition"
-			                	desc= "Personalized and adaptive nutrition coaching"
-	                            img= "https://images.unsplash.com/photo-1587678711204-ca6d3d2f1f3b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=alex-motoc-v77vc1iAK18-unsplash.jpg&w=640"
-			                />
-							
-			                <ServicesSection
-			                	title="Fitness & Nutrition"
-			                	desc="Personalized and adaptive fitness & nutrition coaching"
-			                	img="https://images.unsplash.com/photo-1558017487-06bf9f82613a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=derick-mckinney-__QqvTI5Edc-unsplash.jpg"
-			               
-							/>
+								/>
 
-						 </div>
-			            
-						<div className="btns">
-								<a className="btn btn-primary btn-top" href="#">Learn More</a>
-								<a className="btn btn-primary btn-top" href="#">Learn More</a>
-								<a className="btn btn-primary btn-top" href="#">Learn More</a>
-						</div>
-						{/* </div> */}
+								<ServicesSection
+									title="Fitness & Nutrition"
+									desc="Personalized and adaptive fitness & nutrition coaching"
+									img="https://images.unsplash.com/photo-1558017487-06bf9f82613a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=derick-mckinney-__QqvTI5Edc-unsplash.jpg"
+							
+								/>
+
+								
+						 	</div>
+							
+						
+						
+						
 
 			        </div>
 			    </section>
@@ -173,9 +183,9 @@ class Home extends Component {
 			        <div className="container">
 			            <div className="center">
 							<a href="#" className="btn btn-primary btn-top">
-			                	<h2>SIGN UP NOW</h2>
+			                	<h2>START MY TRANSFORMATION!</h2>
 							</a>
-			                <p className="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
+			            
 			            </div>
 
 			        </div>

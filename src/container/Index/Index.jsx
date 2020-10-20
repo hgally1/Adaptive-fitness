@@ -8,6 +8,7 @@ import About from '../Page/About';
 import Services from '../Page/Services';
 import Login from '../Page/Login';
 import Contact from '../Page/Contact';
+//import RegistrationForm from '../../components/RegistrationForm';
 
 class Index extends Component {
 
@@ -54,24 +55,58 @@ class Index extends Component {
 					<Route path="/contact/" component={Contact} />
 					<Route path="/login/" component={Login} />
 
-					<footer id="footer">
-						{/* <Footer /> */}
-						
-							<div className="container fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-								<div className="row">
-									<div className="col-md-2">
+			
+
+					<div>
+						<section id="bottom">
+			    			<div className="container fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+			        			<div className="row">
+			            			<div className="col-md-2">
 										<a href="#" className="footer-logo">
 										<img src={require('../../images/AF_transparent.png')} className="logo" height='250' width='250'  />
 										</a>
-										
-									</div>
-									
-									<Footer />
-								</div>
-							</div>
-					</footer>
+			            			</div>
 					
+					
+									<div className="col-md-10">
+										<div className="row">
+											
+											<div className="col-md-3">
+												<div className="widget">
+													<h3>Site Map</h3>
+													<ul>
+														<li><a href="#">Home</a></li>
+														<li><a href="#">About</a></li>
+														<li><a href="#">Services</a></li>
+														<li><a href="#">Contact</a></li>
+														<li><a href="#">Login</a></li>
+													</ul>
+												</div>
+											</div>
+											<div className="col-md-3">
+												<div className="widget">
+													<h3>Site Map</h3>
+													<ul>
+														<li><a href="#">Home</a></li>
+														<li><a href="#">About</a></li>
+														<li><a href="#">Services</a></li>
+														<li><a href="#">Contact</a></li>
+														<li><a href="#">Login</a></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+													
+								</div>
+								
+							</div>
+						
+						</section>
+					</div>
 				</div>
+			
+				
 			</Router>
 		)
 	}
