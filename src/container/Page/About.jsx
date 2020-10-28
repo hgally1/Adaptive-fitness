@@ -6,7 +6,7 @@ class About extends Component {
         return (
             <div className="body">
 				{/* <div id="about-page"> */}
-				<div id="about-page">
+				<div id="about-page" className="about-img1">
 					<section className="about">
 						<div className="container">
 							<div className="large-title text-center">        
