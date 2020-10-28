@@ -370,6 +370,9 @@
     #main-slider .carousel .item{
         height: 600px;
     }
+    #testimonials .carousel .item{
+      height: 600px;
+  }
     
     #content .tab-pane{
         padding-left: 0;

@@ -11,7 +11,7 @@ const ServicesSection = (props) => {
 					<h2>{props.title}</h2>
 					<p>{props.desc}</p>
 					<div className="btns">
-						<a className="btn btn-primary btn-top" href="#">Learn More</a>
+						<a className="btn btn-primary btn-top" href="/services">Learn More</a>
 					</div>
 				</div>
 			</div>

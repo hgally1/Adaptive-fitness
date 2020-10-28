@@ -13,7 +13,9 @@ class Services extends Component {
 			        <div className="container">
 			            <div className="center fadeInDown">
 			                {/* <h2>Our Service</h2> */}
-			                <p className="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
+			                <p className="lead">Transforming your body comes from having a strategic plan, designed individually for your body and your lifestyle. After that, it’s consistency and commitment that creates the results you’re searching for. Most of the time, people make it out to be more complicated than it needs to be…
+
+This is exactly where we come in to provide the solution for your personal breakthrough. We create a completely individualized plan in a simplified way so you can actually stick to it long-term (both training and nutrition).</p>
 			            </div>
 
 			            <div className="row">

@@ -6,6 +6,7 @@
 
 body {
     background:#4e4e4e;
+    /* background-image: linear-gradient(to bottom right, black 15%, #750b0b 60%); */
     font-family: 'Open Sans', sans-serif;
     color: #fff;
     line-height: 22px;
@@ -184,6 +185,10 @@ a:focus {
 *******Header******
 **************************/
 
+#header {
+    border-bottom: 5px solid #b63217d3;
+    /* border-top: 5px solid #EC5538; */
+}
 #header .search {
     display: inline-block;
 }
@@ -278,7 +283,7 @@ input.search-form:hover {
     background: rgb(14, 13, 13);
     
 }
-.navbar::before{
+/* .navbar::before{
     content:"";
     background-color:#000;
     position:absolute;
@@ -287,7 +292,7 @@ input.search-form:hover {
     bottom:0;
     left:0;
     opacity:0.2;
-  }
+  } */
 
 .navbar-nav {
     margin-top: 12px;
@@ -485,8 +490,8 @@ input.search-form:hover {
 
 .features .feature-wrap .icon {
     
-    width: 230px;
-    height: 230px;
+    
+    height: 280px;
     text-align: center;
     line-height: 40px;
     color: #D0D0D0;
@@ -500,11 +505,11 @@ input.search-form:hover {
 }
 
 
-.features .feature-wrap:hover .icon {
+/* .features .feature-wrap:hover .icon {
     color: #ffffff;
     border: 1px solid #EC5538;
     background-color: #EC5538;
-}
+} */
 
 .features .feature-wrap h2 {
     font-size: 24px;
@@ -525,6 +530,7 @@ input.search-form:hover {
 /* TESTIMONIALS */
 
 #testimonials {
+    border: 1px solid black;
     background-color: rgb(24, 40, 109);
 }
 
@@ -704,7 +710,10 @@ input.search-form:hover {
     justify-content: center;
 
 }
-#recent-works {
+
+/* Instagram */
+
+/* #recent-works {
     background-color: #FAFAFA;
 }
 
@@ -773,7 +782,10 @@ input.search-form:hover {
 
 .recent-work-wrap:hover .overlay {
     opacity: 1;
-}
+} */
+
+/*  */
+
 .btn-top {
     margin-top: 50px;
 }
@@ -1268,17 +1280,37 @@ a.accordion-toggle i {
 /*************************
 ********* About Us Page CSS ******
 **************************/
+#about-page {
+    background-image: url('https://pixabay.com/get/54e5d7464852ac14f6da8c7dda353678153cd6e75b59704c_1280.jpg?attachment=');
+    height: 1283px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* background-position: center center; */
+    background-position: 75% 25%;
+    
+   
+    /* width: 800px; */
+   
+
+    
+
+}
 
 .about-img{
-    padding-right: 70px;
+    /* padding-right: 10px; */
+    border: black 2px solid;
 }
 
 .about-content{
-    color: #989898;
+    background-color: #FFFFFF;
+    color: black;
+    opacity:0.6;
     font-size: 16px;
-    line-height: 26px;
-    margin-top: 80px;
+    /* line-height: 26px; */
+    margin-top: 60px;
+    
 }
+
 
 .about-content h2{
     font-size: 48px;
@@ -1287,11 +1319,18 @@ a.accordion-toggle i {
     margin: 0 0 25px;
 }
 
-#team-area{
-    background-color: #0f43a3;
+
+
+.mb-3 {
+    margin: 20px;
+    
 }
 
-.single-team img{
+
+
+
+
+/* .single-team img{
     width: 100%;
 }
 
@@ -1337,7 +1376,7 @@ a.accordion-toggle i {
 
 .single-team .team-social a:hover{
     color: #EC5538;
-}
+} */
 
 
 
@@ -2462,8 +2501,9 @@ shortcodes page css
     display: inline-block;
 }
 #bottom {
-    background: #f5f5f5;
-    border-bottom: 5px solid #EC5538;
+    background:#000;
+    border-bottom: 5px solid #b63217d3;
+    border-top: 5px solid #b63217d3;
     font-size: 14px;
     padding: 70px 0;
 }
@@ -2473,7 +2513,7 @@ shortcodes page css
     margin-bottom: 15px;
     text-transform: uppercase;
     font-size: 14px;
-    color: #000;
+    color: #ffffff ;
     font-weight: 700;
 }
 
