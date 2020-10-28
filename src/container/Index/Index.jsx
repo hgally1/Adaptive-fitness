@@ -6,9 +6,15 @@ import Navbar from '../../components/Navbar';
 import Home from '../Page/Home';
 import About from '../Page/About';
 import Services from '../Page/Services';
-import Login from '../Page/Login';
 import Contact from '../Page/Contact';
-//import RegistrationForm from '../../components/RegistrationForm';
+import Login from '../Page/Login';
+import Signup from '../Page/Signup';
+import Register from '../Page/Register';
+import Account from '../Page/Account';
+import Admin from '../Page/Admin';
+import ForgotPW from '../Page/ForgotPW';
+
+import * as ROUTES from '../../constants/routes';
 
 class Index extends Component {
 
@@ -29,13 +35,13 @@ class Index extends Component {
 				                    </button>
 				                   
 									<a href="#/ " className="navbar-brand">
-										<img src={require('../../images/AF_logo.png')} className="logo" height='250' width='250'  />
+										<img src={require('../../images/Logo2.png')} className="logo" height='250' width='250'  />
 									</a>
 				                </div>
 
 				                <div className="collapse navbar-collapse navbar-right">
 				                    <ul className="nav navbar-nav">
-				                        <li className="home-nav active"><Link to="/">Home</Link></li>
+				                        <li className="home-nav "><Link to="/">Home</Link></li>
 				                        <li className=""><Link to="/about">About</Link></li>
 				                        <li className=""><Link to="/services">Services</Link></li>
 				                        <li className=""><Link to="/contact">Contact</Link></li>
@@ -48,12 +54,17 @@ class Index extends Component {
 	    			
 	    			</header>
 
-					<Route path="/" exact component={Home} />
-					<Route path="/about/" component={About} />
-					<Route path="/services/" component={Services} />
+					<Route exact path={ROUTES.HOME} exact component={Home} />
+					<Route path={ROUTES.ABOUT} component={About} />
+					<Route path={ROUTES.SERVICES} component={Services} />
 					
-					<Route path="/contact/" component={Contact} />
-					<Route path="/login/" component={Login} />
+					<Route path={ROUTES.CONTACT} component={Contact} />
+					<Route path={ROUTES.LOGIN} component={Login} />
+					<Route path={ROUTES.SIGNUP} component={Signup} />
+					<Route path={ROUTES.REGISTER} component={Register} />
+					<Route path={ROUTES.ACCOUNT} component={Account} />
+					<Route path={ROUTES.ADMIN} component={Admin} />
+					<Route path={ROUTES.PASSWORD_FORGET} component={ForgotPW} />
 
 			
 
@@ -62,8 +73,8 @@ class Index extends Component {
 			    			<div className="container fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
 			        			<div className="row">
 			            			<div className="col-md-2">
-										<a href="#" className="footer-logo">
-										<img src={require('../../images/AF_transparent.png')} className="logo" height='250' width='250'  />
+										<a href="#" className="navbar-brand">
+										<img src={require('../../images/Logo-3.png')} className="logo" height='250' width='250' />
 										</a>
 			            			</div>
 					

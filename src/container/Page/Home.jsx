@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ServicesSection from '../../components/ServicesSection';
+//import Testimonials from '../../components/Testimonials';
 
 class Home extends Component {
     render() {
@@ -10,13 +11,13 @@ class Home extends Component {
 						<div className="row">
 							<div className="center fadeInDown">
 								<div className="content" >
-									<h1 className="home-title">Adaptive Fitness</h1>
+									<h1 className="home-title">Online Fitness and Nutrition Coaching</h1>
 									<p className="home-title">
-										Personalized Fitness and Nutrition Coaching
+										Helping real people, like you, get real results
 									</p>
 									<div className="btns">
-										<a className="btn btn-primary btn-top" href="#">Learn More</a>
-										<a className="btn btn-primary btn-top" href="#">Get Started</a>
+										<a className="btn btn-primary btn-top" href="/services">Learn More</a>
+										<a className="btn btn-primary btn-top" href="/signup">Get Started</a>
 									</div>
 								</div>
 							</div>
@@ -30,13 +31,9 @@ class Home extends Component {
 						<div className="center fadeInDown">
 							<div className="home-info">
 								<h2>Why Adaptive Fitness?</h2>
-								------------------------                  <img src={require('../../images/AF_logo.png')} className="logo" height='250' width='250' />               ------------------------
-								<p className="lead">MOST FITNESS AND DIET PLANS FAIL
-BECAUSE THEY'RE TOO GENERIC. HOW GOOD WOULD IT FEEL TO FINALLY HAVE THE BODY YOU WANT AND NEVER STRESS ABOUT WHAT TO EAT OR HOW TO EXERCISE EVER AGAIN?.... 
-My mission is simple: To bring an effective, personalized approach to health and fitness that anyone can use to get in better shape — even if they’ve tried and failed before. You are the focus.
-You'll interact with me every week. Everything is customized specifically for you. 
-Take the stress out of fitness and nutrition! No more worrying about what to eat, how to exercise, or what to do next. Your only job is to show up and follow the plan. I won't deprive you of the stuff you love. Instead of crazy-strict dieting rules, we'll work together to create a simple plan that gets great results—without making you the “weird person” at dinner. 
-Built for results that don’t disappear. I don’t want you to quit before you hit your goals. I also believe in solutions that last. I want you to get great results now — that you keep for the rest of your life. </p>
+								------------------------                  <img src={require('../../images/Logo.png')} className="logo" height='250' width='250' />               ------------------------
+								<p className="lead">MOST FITNESS AND DIET PLANS FAIL BECAUSE THEY'RE TOO GENERIC. HOW GOOD WOULD IT FEEL TO FINALLY HAVE THE BODY YOU WANT AND NEVER STRESS ABOUT WHAT TO EAT OR HOW TO EXERCISE EVER AGAIN?.... 
+Unlike most coaching services, my fitness and nutrition programs are customized to your schedule, your preferences, and your level of experience. My mission is simple: To bring an effective, personalized approach to health and fitness that anyone can use to get in better shape — even if they’ve tried and failed before.</p>
 							</div>
 						</div>
 					</div>
@@ -47,7 +44,7 @@ Built for results that don’t disappear. I don’t want you to quit before you 
 			        <div className="container">
 			            <div className="center fadeInDown">
 			                <h2>CHOOSE YOUR COACHING NEEDS</h2>
-			                <p className="lead">Unlike most coaching services, my fitness and nutrition programs are customized to your schedule, your preferences, and your level of experience.</p>
+			                <p className="lead"> Appreciating the unique nature of each client is crucial to seeking the best results. However, it’s not only the methods that change from person to person. Not everyone wants the same level of impact as others. While some crave a complete body transformation, others are happy to regain a little self-confidence. Whatever your motives may be, Adaptive Fitness is here to support you throughout the process through a selection of three packages.</p>
 			            </div>
 
 						{/* <div className="center"> */}
@@ -55,26 +52,26 @@ Built for results that don’t disappear. I don’t want you to quit before you 
 						 
 								<ServicesSection
 									title= "Fitness"
-									desc= "Personal Physical Training"
+									desc= "You'll receive personalized fitness training guides to get you to where you want to be. Whether that's losing weight, toning up, or building muscle."
 									img= "https://images.unsplash.com/photo-1562771242-a02d9090c90c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=alora-griffiths-zEAX0E0KJxs-unsplash.jpg"
 								/>
 								
 								
 								<ServicesSection
 									title="Nutrition"
-									desc= "Personalized and adaptive nutrition coaching"
+									desc= " I won't deprive you of the stuff you love. Instead of crazy-strict dieting rules, we'll work together to create a simple plan that gets great results—without making you the “weird person” at dinner."
 									img= "https://images.unsplash.com/photo-1587678711204-ca6d3d2f1f3b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=alex-motoc-v77vc1iAK18-unsplash.jpg&w=640"
 								/>
 								
 								<ServicesSection
 									title="Fitness & Nutrition"
-									desc="Personalized and adaptive fitness & nutrition coaching"
+									desc="Take the stress out of fitness and nutrition! No more worrying about what to eat, how to exercise, or what to do next. Your only job is to show up and follow the plan"
 									img="https://images.unsplash.com/photo-1558017487-06bf9f82613a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=derick-mckinney-__QqvTI5Edc-unsplash.jpg"
 							
 								/>
 
 								<ServicesSection
-									title="Fitness & Nutrition"
+									title="Physical Training"
 									desc="Personalized and adaptive fitness & nutrition coaching"
 									img="https://images.unsplash.com/photo-1558017487-06bf9f82613a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=derick-mckinney-__QqvTI5Edc-unsplash.jpg"
 							
@@ -91,6 +88,7 @@ Built for results that don’t disappear. I don’t want you to quit before you 
 			    </section>
 
 {/* Testimonials */}
+				
 				<section id="testimonials" >
 					<div className="container">
 						<div className="center fadeInDown">
@@ -140,10 +138,11 @@ Built for results that don’t disappear. I don’t want you to quit before you 
 							</a>
 						</div>
 					</div>
+					
 			    </section>				
 				
 {/* Meet Jai */}
-			    <section className="about" id="services" >
+			    <section id="about" >
 			        <div className="container">
 			            <div className="center fadeInDown">
 			                <h2>Meet Jai</h2>
@@ -154,7 +153,7 @@ Built for results that don’t disappear. I don’t want you to quit before you 
 							<img src="" alt="jai-homepage-img" />
 						</div>
 						<div className="clearfix text-center">
-			                <a href="#" className="btn btn-primary btn-top">Read More</a>
+			                <a href="/about" className="btn btn-primary btn-top">Read More</a>
 			            </div>
 
 			            
@@ -182,7 +181,7 @@ Built for results that don’t disappear. I don’t want you to quit before you 
 			    <section id="partner">
 			        <div className="container">
 			            <div className="center">
-							<a href="#" className="btn btn-primary btn-top">
+							<a href="/signup" className="btn btn-primary btn-top">
 			                	<h2>START MY TRANSFORMATION!</h2>
 							</a>
 			            
