@@ -3,12 +3,12 @@
 		"id" : 0,
 		"title": "Fitness",
 		"desc": "Personal Physical Training",
-		"img": "https://unsplash.com/photos/w6BHqa8ukc0"
+		"img": "https://images.unsplash.com/photo-1562771242-a02d9090c90c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=alora-griffiths-zEAX0E0KJxs-unsplash.jpg"
 	},
 	{
 		"id": 1,
 		"title": "Nutrition",
 		"desc": "Personalized and adaptive nutrition coaching",
-		"img": "https://unsplash.com/photos/v77vc1iAK18"
+		"img": "https://images.unsplash.com/photo-1587678711204-ca6d3d2f1f3b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=alex-motoc-v77vc1iAK18-unsplash.jpg&w=640"
 	}
 ]

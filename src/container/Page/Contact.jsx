@@ -6,14 +6,14 @@ class Contact extends Component {
 		return(
 			<div className="body">
 				<div className="page-title">
-			        <h1>Contact us</h1>
+			        <h1>Contact</h1>
 			    </div>
 
 			    <section id="contact-page">
 			        <div className="container">
 			            <div className="large-title text-center">        
-			                <h2>Drop Your Message</h2>
-			                <p>All users on MySpace will know that there are millions of people out there. Every day besides so many people joining this community.</p>
+			                <h2>Drop Your Message Here</h2>
+			                {/* <p>All users on MySpace will know that there are millions of people out there. Every day besides so many people joining this community.</p> */}
 			            </div> 
 			            <div className="row contact-wrap"> 
 			               
@@ -30,11 +30,7 @@ class Contact extends Component {
 			                        <div className="form-group">
 			                            <label>Phone</label>
 			                            <input type="number" className="form-control"/>
-			                        </div>
-			                        <div className="form-group">
-			                            <label>Company Name</label>
-			                            <input type="text" className="form-control"/>
-			                        </div>                        
+			                        </div>                       
 			                    </div>
 			                    <div className="col-sm-5">
 			                        <div className="form-group">
