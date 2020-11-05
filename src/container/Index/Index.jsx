@@ -25,7 +25,7 @@ class Index extends Component {
 					<header id="header">
 
 						<nav className="navbar navbar-inverse" role="banner">
-				            <div className="container">
+				            <div className="container fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
 				                <div className="navbar-header">
 				                    <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
 				                        <span className="sr-only">Toggle navigation</span>
@@ -86,23 +86,22 @@ class Index extends Component {
 												<div className="widget">
 													<h3>Site Map</h3>
 													<ul>
-														<li><a href="#">Home</a></li>
-														<li><a href="#">About</a></li>
-														<li><a href="#">Services</a></li>
-														<li><a href="#">Contact</a></li>
-														<li><a href="#">Login</a></li>
+														<li><a href="/">Home</a></li>
+														<li><a href="/about">About</a></li>
+														<li><a href="/services">Services</a></li>
+														
 													</ul>
 												</div>
 											</div>
 											<div className="col-md-3">
 												<div className="widget">
-													<h3>Site Map</h3>
+													<h3></h3>
 													<ul>
-														<li><a href="#">Home</a></li>
-														<li><a href="#">About</a></li>
-														<li><a href="#">Services</a></li>
-														<li><a href="#">Contact</a></li>
-														<li><a href="#">Login</a></li>
+														<li><a href="/contact">Contact</a></li>
+														<li><a href="/login">Login</a></li>
+														<li><a href="/signup">Signup</a></li>
+														<li><a href="/register">Register</a></li>
+														
 													</ul>
 												</div>
 											</div>

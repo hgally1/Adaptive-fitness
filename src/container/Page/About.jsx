@@ -6,11 +6,12 @@ class About extends Component {
         return (
             <div className="body">
 				{/* <div id="about-page"> */}
-				<div id="about-page" className="about-img1">
+				<div id="about-page" className="bg-image">
+				    
 					<section className="about">
-						<div className="container">
+						<div className="container fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
 							<div className="large-title text-center">        
-									<h2>Hi! I'm Jai!</h2>
+									{/* <h2>Hi! I'm Jai!</h2> */}
 							</div>
 							<div className="card mb-3">
 								<div className="row">
