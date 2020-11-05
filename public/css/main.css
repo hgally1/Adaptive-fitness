@@ -493,6 +493,7 @@ input.search-form:hover {
     
     height: 280px;
     text-align: center;
+    align: center;
     line-height: 40px;
     color: #D0D0D0;
 
@@ -1281,7 +1282,8 @@ a.accordion-toggle i {
 ********* About Us Page CSS ******
 **************************/
 #about-page{
-    background-image: url("https://heidigally.files.wordpress.com/2020/10/muscles-2525200_1280.jpg");
+    /* background-image: url("https://heidigally.files.wordpress.com/2020/10/muscles-2525200_1280.jpg"); */
+    background-image: 'src/images/backgroundMuscles.jpg';
     height: 1283px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1290,7 +1292,8 @@ a.accordion-toggle i {
     
    
     /* width: 800px; */
-   
+
+
 
     
 
