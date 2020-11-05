@@ -58,7 +58,7 @@ function LoginForm(props) {
             </div>
             <div className="registerMessage">
                 <span>Dont have an account? </span>
-                <span className="loginText">Register</span> 
+                <span className="loginText" ><a href="/register">Register</a></span> 
             </div>
         </div>
         </div>

@@ -7,7 +7,7 @@ class Home extends Component {
         return (
             <div className="body homepage">
 				<div id="main" className="img-1">
-					<div className="container">
+					<div className="container fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
 						<div className="row">
 							<div className="center fadeInDown">
 								<div className="content" >
@@ -28,7 +28,7 @@ class Home extends Component {
 {/* small section on what adaptive fitness is about */}
 				<section id="adaptfit" >
 					<div className="container">
-						<div className="center fadeInDown">
+						<div className="center fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
 							<div className="home-info">
 								<h2>Why Adaptive Fitness?</h2>
 								------------------------                  <img src={require('../../images/Logo.png')} className="logo" height='250' width='250' />               ------------------------
@@ -42,12 +42,11 @@ Unlike most coaching services, my fitness and nutrition programs are customized 
 {/* Coaching Needs */}
                 <section id="feature" className="service-item">
 			        <div className="container">
-			            <div className="center fadeInDown">
+			            <div className="center fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
 			                <h2>CHOOSE YOUR COACHING NEEDS</h2>
 			                <p className="lead"> Appreciating the unique nature of each client is crucial to seeking the best results. However, it’s not only the methods that change from person to person. Not everyone wants the same level of impact as others. While some crave a complete body transformation, others are happy to regain a little self-confidence. Whatever your motives may be, Adaptive Fitness is here to support you throughout the process through a selection of three packages.</p>
 			            </div>
 
-						{/* <div className="center"> */}
 			         	 	<div className="row">
 						 
 								<ServicesSection
@@ -150,7 +149,7 @@ Unlike most coaching services, my fitness and nutrition programs are customized 
 			                </p>
 			            </div>
 						<div className="jai-image" >
-							<img src="" alt="jai-homepage-img" />
+							<img src={require("../../images/Jai-smiling.jpg")} alt="jai-homepage-img" />
 						</div>
 						<div className="clearfix text-center">
 			                <a href="/about" className="btn btn-primary btn-top">Read More</a>
