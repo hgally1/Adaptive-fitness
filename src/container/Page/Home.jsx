@@ -5,8 +5,8 @@ import ServicesSection from '../../components/ServicesSection';
 class Home extends Component {
     render() {
         return (
-            <div className="body homepage">
-				<div id="main" className="img-1">
+            <div className="body wrapper">
+				<div id="main" className="section parallax img-1">
 					<div className="container fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
 						<div className="row">
 							<div className="center fadeInDown">
@@ -25,26 +25,13 @@ class Home extends Component {
 						</div>
 					</div>
 				</div>
-{/* small section on what adaptive fitness is about */}
-				<section id="adaptfit" >
-					<div className="container">
-						<div className="center fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-							<div className="home-info">
-								<h2>Why Adaptive Fitness?</h2>
-								------------------------                  <img src={require('../../images/Logo.png')} className="logo" height='250' width='250' />               ------------------------
-								<p className="lead">MOST FITNESS AND DIET PLANS FAIL BECAUSE THEY'RE TOO GENERIC. HOW GOOD WOULD IT FEEL TO FINALLY HAVE THE BODY YOU WANT AND NEVER STRESS ABOUT WHAT TO EAT OR HOW TO EXERCISE EVER AGAIN?.... 
-Unlike most coaching services, my fitness and nutrition programs are customized to your schedule, your preferences, and your level of experience. My mission is simple: To bring an effective, personalized approach to health and fitness that anyone can use to get in better shape — even if they’ve tried and failed before.</p>
-							</div>
-						</div>
-					</div>
-				</section>
 
 {/* Coaching Needs */}
-                <section id="feature" className="service-item">
+                <section id="feature" className="section static service-item">
 			        <div className="container">
 			            <div className="center fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
 			                <h2>CHOOSE YOUR COACHING NEEDS</h2>
-			                <p className="lead"> Appreciating the unique nature of each client is crucial to seeking the best results. However, it’s not only the methods that change from person to person. Not everyone wants the same level of impact as others. While some crave a complete body transformation, others are happy to regain a little self-confidence. Whatever your motives may be, Adaptive Fitness is here to support you throughout the process through a selection of three packages.</p>
+			                <p className="lead"> Appreciating the unique nature of each client is crucial to seeking the best results. However, it’s not only the methods that change from person to person. Not everyone wants the same level of impact as others. While some crave a complete body transformation, others are happy to regain a little self-confidence. Whatever your motives may be, Adaptive Fitness is here to support you throughout the process through a selection of packages.</p>
 			            </div>
 
 			         	 	<div className="row">
@@ -86,9 +73,28 @@ Unlike most coaching services, my fitness and nutrition programs are customized 
 			        </div>
 			    </section>
 
+{/* small section on what adaptive fitness is about */}
+				
+					<div id="adaptfit" className="section parallax img-whyus">
+						{/* <img src={require('../../images/backgroundMuscles.jpg')} /> */}
+					
+						<div className="container fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+							<div className="row">
+								<div className="center fadeInDown">
+									<div className="content" >
+									<h2>Why Adaptive Fitness?</h2>
+									------------------------                  <img src={require('../../images/Logo.png')} className="logo" height='250' width='250' />               ------------------------
+									<p className="lead">MOST FITNESS AND DIET PLANS FAIL BECAUSE THEY'RE TOO GENERIC. HOW GOOD WOULD IT FEEL TO FINALLY HAVE THE BODY YOU WANT AND NEVER STRESS ABOUT WHAT TO EAT OR HOW TO EXERCISE EVER AGAIN?.... 
+Unlike most coaching services, my fitness and nutrition programs are customized to your schedule, your preferences, and your level of experience. My mission is simple: To bring an effective, personalized approach to health and fitness that anyone can use to get in better shape — even if they’ve tried and failed before.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+				</div>
+
 {/* Testimonials */}
 				
-				<section id="testimonials" >
+				<section id="testimonials" className="section static">
 					<div className="container">
 						<div className="center fadeInDown">
 							<h2>Here's what people are saying!</h2>
@@ -140,7 +146,7 @@ Unlike most coaching services, my fitness and nutrition programs are customized 
 					
 			    </section>				
 				
-{/* Meet Jai */}
+{/* Meet Jai
 			    <section id="about" >
 			        <div className="container">
 			            <div className="center fadeInDown">
@@ -157,13 +163,13 @@ Unlike most coaching services, my fitness and nutrition programs are customized 
 
 			            
 			        </div>
-			    </section>
+			    </section> */}
 {/* Instagram */}
-			    <section id="recent-works">
+			    <section id="recent-works" className="section static ig">
 			        <div className="container">
 			            <div className="center fadeInDown">
 			                <h2>Instagram</h2>
-			                <p className="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
+			                <p className="lead">#adaptivefitness</p>
 			            </div>
 
 			            <div className="row">
@@ -177,11 +183,11 @@ Unlike most coaching services, my fitness and nutrition programs are customized 
 			    </section>
 
 
-			    <section id="partner">
+			    <section id="banner" className="section parallax banner">
 			        <div className="container">
 			            <div className="center">
 							<a href="/signup" className="btn btn-primary btn-top">
-			                	<h2>START MY TRANSFORMATION!</h2>
+			                	<h2>START MY TRANSFORMATION TODAY!</h2>
 							</a>
 			            
 			            </div>

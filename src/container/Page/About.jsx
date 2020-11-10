@@ -5,14 +5,14 @@ class About extends Component {
     render() {
         return (
             <div className="body">
-				{/* <div id="about-page"> */}
-				<div id="about-page" className="bg-image">
+				
+				<div id="about-page">
 				    
-					<section className="about">
+					<div className="about">
 						<div className="container fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-							<div className="large-title text-center">        
-									{/* <h2>Hi! I'm Jai!</h2> */}
-							</div>
+							       
+							<img src={require('../../images/Jai-smiling.jpg')} className="about-img" alt="Jai-smiling" height='450' width='1160'/>
+							
 							<div className="card mb-3">
 								<div className="row">
 									<div className="col-md-4">
@@ -34,12 +34,7 @@ class About extends Component {
 							
 							<div className="card mb-3">
 								<div className="row">
-									<div className="col-md-4">
-										<div className="about-img">
-							
-											<img src={require('../../images/Jai-back.jpeg')} className="card-img" alt="Jai-back" height='250' width='400'/>
-											</div>
-									</div>
+									
 									<div className="col-md-7">
 										<div className="about-content">
 											<div className="card-body">
@@ -48,6 +43,12 @@ class About extends Component {
 			
 											</div>
 										</div>
+									</div>
+									<div className="col-md-4">
+										<div className="about-img">
+							
+											<img src={require('../../images/Jai-back.jpeg')} className="card-img" alt="Jai-back" height='250' width='400'/>
+											</div>
 									</div>
 								</div>
 							</div>
@@ -58,7 +59,18 @@ class About extends Component {
 					
 				
 						
-					</section>
+					</div>
+					<section id="banner" className="section static banner">
+			        <div className="container">
+			            <div className="center">
+							<a href="/signup" className="btn btn-primary btn-top">
+			                	<h2>SIGN UP TODAY!</h2>
+							</a>
+			            
+			            </div>
+
+			        </div>
+			    </section>
 				</div>
 			</div>
 			
