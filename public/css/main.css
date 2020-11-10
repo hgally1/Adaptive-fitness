@@ -5,8 +5,10 @@
 **************************/
 
 body {
-    background:#4e4e4e;
-    /* background-image: linear-gradient(to bottom right, black 15%, #750b0b 60%); */
+    /* background:#331b1b; */
+    background-color: black;
+    /* height: 100vh;
+    background-attachment: fixed; */
     font-family: 'Open Sans', sans-serif;
     color: #fff;
     line-height: 22px;
@@ -20,7 +22,7 @@ h5,
 h6 {
     font-weight: 600;
     font-family: 'Open Sans', sans-serif;
-    color:black;
+    color: white;
 }
 
 h1 {
@@ -34,7 +36,7 @@ h2 {
 
 h3 {
     font-size: 16px;
-    color: #000000;
+    color: #ffffff;
     font-weight: 400;
     line-height: 24px;
 }
@@ -49,14 +51,14 @@ h4 {
 }
 
 a {
-    color: #EC5538;
+    color: #b90b0bf8;
     -webkit-transition: color 300ms, background-color 300ms;
     transition: color 300ms, background-color 300ms;
 }
 
 a:hover,
 a:focus {
-    color: #EC5538;
+    color: #b90b0bf8;
 }
 
 hr {
@@ -64,9 +66,11 @@ hr {
     border-bottom: 1px solid #fff;
 }
 
+
+
 .btn-primary {
     padding: 8px 20px;
-    background: #EC5538;
+    background: #b90b0bf8;
     color: #fff;
     border-radius: 4px;
     border: none;
@@ -75,7 +79,7 @@ hr {
 
 .btn-primary:hover,
 .btn-primary:focus {
-    background: #EC5538;
+    background: #b90b0bf8;
     outline: none;
     -webkit-box-shadow: none;
     box-shadow: none;
@@ -187,10 +191,16 @@ a:focus {
 
 #header {
     border-bottom: 2px solid #080201d3;
-    /* border-top: 5px solid #EC5538; */
+    position: relative;
 }
+
 #header .search {
     display: inline-block;
+}
+
+#bottom {
+    position: relative;
+    height: 40vh;
 }
 
 .navbar>.container .navbar-brand {
@@ -227,7 +237,7 @@ ul.social-share li a {
 }
 
 ul.social-share li a:hover {
-    background: #EC5538;
+    background: #b90b0bf8;
     color: #fff;
 }
 
@@ -261,14 +271,19 @@ input.search-form:hover {
     padding: 10px;
     
     
+    
    
 }
+.logo {
+    border-radius: 5px;
+}
+
 
 .navbar {
     border-radius: 0;
     margin-bottom: 0;
     /* background: rgb(36,0,2); */
-    background: linear-gradient(90deg,rgba(36, 0, 2, 0.657) 100%,  rgb(5, 0, 0) 50% );
+    background: linear-gradient(90deg, rgba(59, 3, 6, 0.657) 60%,  #b90b0bf8 100% );
     /* background: rgb(14, 13, 13); */
     
 }
@@ -303,7 +318,7 @@ input.search-form:hover {
 }
 
 .navbar-inverse .navbar-nav>li>a:hover {
-    background-color: #EC5538;
+    background-color: #b90b0bf8;
     color: #fff;
 }
 
@@ -323,7 +338,7 @@ input.search-form:hover {
 .navbar-inverse .navbar-nav>.open>a,
 .navbar-inverse .navbar-nav>.open>a:hover,
 .navbar-inverse .navbar-nav>.open>a:focus {
-    background-color: #EC5538;
+    background-color: #b90b0bf8;
     color: #fff;
 }
 
@@ -352,7 +367,7 @@ input.search-form:hover {
 .navbar-inverse .navbar-nav .dropdown-menu>li:hover>a,
 .navbar-inverse .navbar-nav .dropdown-menu>li:focus>a,
 .navbar-inverse .navbar-nav .dropdown-menu>li.active>a {
-    background-color: #EC5538;
+    background-color: #b90b0bf8;
     color: #fff;
 }
 
@@ -375,13 +390,61 @@ input.search-form:hover {
 *******Home Page******
 **************************/
 
+.wrapper {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 2px;
+}
+
+.section { 
+    position: relative;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.parallax::after {
+    content: " ";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transform: translateZ(-1px) scale(1.5);
+    background-size: 100%;
+    z-index: -1;
+}
+
+.static {
+    background: black;
+}
+
+.img-1::after {
+    background-image: url('https://images.unsplash.com/photo-1547060425-8429076d4b4c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=brocnbells-com-team-o_AKuNfcFyM-unsplash.jpg');
+}
+
+.img-whyus::after {
+    background-image: url(https://heidigally.files.wordpress.com/2020/10/muscles-2525200_1280.jpg); 
+    
+}
+
+.ig::after {
+    background-color: black;
+}
+
+.banner::after {
+    background-image: url(https://heidigally.files.wordpress.com/2020/11/fitness-3167418_1280.jpg);
+}
+
+  
 
 
 
 #main {
-    background-image: url('https://images.unsplash.com/photo-1547060425-8429076d4b4c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=brocnbells-com-team-o_AKuNfcFyM-unsplash.jpg');
-    background-size: cover;
-    background-position: center center;
+    /* background-image: url('https://images.unsplash.com/photo-1547060425-8429076d4b4c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=brocnbells-com-team-o_AKuNfcFyM-unsplash.jpg'); */
+    /* background-size: cover; */
+    /* background-position: center center; */
     color:#fff;
     display:flex;
     align-items:center;
@@ -389,10 +452,19 @@ input.search-form:hover {
     flex-direction:column;
     
     /* align-self: center; */
-    height:100vh;
-    position:relative; 
-    
+    /* height:100vh;
+    position:relative;  */
+   
 }
+
+/* #main .container { 
+    position: relative;
+    height: 100vh;
+    display: flex;
+    
+    
+  
+} */
 
 /* #main::before{
     content:"";
@@ -405,8 +477,8 @@ input.search-form:hover {
     opacity:0.1;
 } */
 
-#main .content {
-    /* align-self: flex-end; */
+/* #main .content {
+    
     display:flex;
     align-items:center;
     justify-content: center;
@@ -416,7 +488,7 @@ input.search-form:hover {
     align-self: flex-end;
     margin-top: 180px;
     
-}
+} */
   
 #main h1{
     /* color: red; */
@@ -424,10 +496,10 @@ input.search-form:hover {
     padding: 0;
     margin-bottom: 5px;
     margin-top: 70px;
-    color: #c4330b;
+    color: #b90b0bf8;
    
     text-shadow: 2px 2px 0 #0C0503, 2px -2px 0 #0C0503, -2px 2px 0 #0C0503, -2px -2px 0 #0C0503, 2px 0px 0 #0C0503, 0px 2px 0 #0C0503, -2px 0px 0 #0C0503, 0px -2px 0 #0C0503;
-    color: #c4330b;;
+    color: #b90b0bf8;
    
 }
     
@@ -443,39 +515,23 @@ input.search-form:hover {
 
 
 .btn {
-    background-color: #EC5538;
+    background-color: #b90b0bf8;
     color: #fff;
     margin: 10px;
 }
 
-/* WHY AF */
 
-#adaptfit {
-    border-top: 2px solid black;
-    border-bottom: 2px solid black;
-    background-image: url("https://heidigally.files.wordpress.com/2020/10/muscles-2525200_1280.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
-
-#adaptfit .home-info {
-    color: #000000;
-}
-
-#adaptfit p{
-    color: #F9FAFB;
-    margin: 40px;
-    font-size: 20px;
-    text-shadow: 2px 2px 0 #0C0503, 2px -2px 0 #0C0503, -2px 2px 0 #0C0503, -2px -2px 0 #0C0503, 2px 0px 0 #0C0503, 0px 2px 0 #0C0503, -2px 0px 0 #0C0503, 0px -2px 0 #0C0503;
-
-}
 
 /* CHOOSE COACHING NEEDS */
 
 #feature {
     padding-bottom: 40px;
+    height: 140vh
     
+}
+
+#feature .container h2 {
+    color: #b90b0bf8;
 }
 
 
@@ -505,13 +561,13 @@ input.search-form:hover {
 
 /* .features .feature-wrap:hover .icon {
     color: #ffffff;
-    border: 1px solid #EC5538;
-    background-color: #EC5538;
+    border: 1px solid #b90b0bf8;
+    background-color: #b90b0bf8;
 } */
 
 .features .feature-wrap h2 {
     font-size: 24px;
-    color: #333;
+    color: #b90b0bf8;
     margin: 0;
     margin-bottom: 24px;
 }
@@ -523,17 +579,41 @@ input.search-form:hover {
     color: #707070;
 }
 
+/* WHY AF */
 
+
+#adaptfit {
+    height: 90vh;
+    
+}
+
+
+
+#adaptfit .content {
+    margin: 60px;
+    color: #000000;
+}
+
+#adaptfit h2 {
+    color: black;
+}
+#adaptfit p{
+    color: #F9FAFB;
+    margin: 40px;
+    font-size: 20px;
+    text-shadow: 2px 2px 0 #0C0503, 2px -2px 0 #0C0503, -2px 2px 0 #0C0503, -2px -2px 0 #0C0503, 2px 0px 0 #0C0503, 0px 2px 0 #0C0503, -2px 0px 0 #0C0503, 0px -2px 0 #0C0503;
+
+}
 
 /* TESTIMONIALS */
 
 #testimonials {
     border-top: 2px solid black;
-    background-color: rgb(24, 40, 109);
+    
 }
 
 #testimonials h2 {
-    color:  #EC5538;
+    color:  #b90b0bf8;
 }
 #main-slider {
     position: relative;
@@ -565,14 +645,14 @@ input.search-form:hover {
 #main-slider .carousel .btn-slide {
     padding: 0 30px;
     line-height: 42px;
-    background: #EC5538;
+    background: #b90b0bf8;
     color: #fff;
     border-radius: 4px;
     margin-top: 40px;
     display: inline-block;
     font-size: 14px;
     margin-right: 10px;
-    border: 1px solid #EC5538;
+    border: 1px solid #b90b0bf8;
 }
 
 #main-slider .carousel .btn-slide.white {
@@ -627,7 +707,7 @@ input.search-form:hover {
 #main-slider .next {
     position: absolute;
     top: 50%;
-    background-color: #EC5538;
+    background-color: #b90b0bf8;
     color: #fff;
     display: inline-block;
     margin-top: -25px;
@@ -670,8 +750,8 @@ input.search-form:hover {
 }
 
 #main-slider .carousel-indicators li.active {
-    background-color: #EC5538;
-    border: 1px solid #EC5538
+    background-color: #b90b0bf8;
+    border: 1px solid #b90b0bf8
 }
 
 #main-slider .active .animation.animated-item-1 {
@@ -706,6 +786,8 @@ input.search-form:hover {
 #about {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
+    background-image: url(https://heidigally.files.wordpress.com/2020/11/fitness-3167418_1280.jpg);
+    background-size: cover;
 }
 
 .jai-image {
@@ -778,7 +860,7 @@ input.search-form:hover {
     color: #fff;
     height: 50px;
     width: 50px;
-    background-color: #EC5538;
+    background-color: #b90b0bf8;
     border-radius: 50%;
     display: inline-block;
     line-height: 50px;
@@ -1054,12 +1136,12 @@ a.accordion-toggle i {
 }
 
 .panel-heading.active a.accordion-toggle i {
-    background: #EC5538;
+    background: #b90b0bf8;
     color: #fff;
 }
 
 .panel-heading.active a.accordion-toggle.collapsed i {
-    background: #EC5538;
+    background: #b90b0bf8;
     color: #fff;
 }
 
@@ -1071,7 +1153,7 @@ a.accordion-toggle i {
 #content .nav-tabs>li.active>a,
 #content .nav-tabs>li.active>a:hover,
 #content .nav-tabs>li.active>a:focus {
-    color: #EC5538;
+    color: #b90b0bf8;
     background-color: #F9FAFB;
     border: 1px solid #E9EFF4;
     font-weight: 500;
@@ -1092,7 +1174,7 @@ a.accordion-toggle i {
     position: absolute;
     width: 80px;
     height: 80px;
-    background-color: #EC5538;
+    background-color: #b90b0bf8;
     top: 50%;
     left: 50%;
     color: #fff;
@@ -1173,40 +1255,48 @@ a.accordion-toggle i {
     border-left: 0 none;
     border-bottom: 0 none;
 }
+/* Sign Up Banner */
 
-#partner {
-    background-image: url(https://images.unsplash.com/photo-1570814711460-37751a607241?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jonathan-borba-8nHvGVdf3E0-unsplash.jpg);
-    background-size: cover;
-    background-position: center center;
+.banner {
+    background-image: url(https://heidigally.files.wordpress.com/2020/11/fitness-3167418_1280.jpg);
+    
 }
 
-#partner {
+#banner {
+    height: 50vh;
     color: #fff;
     text-align: center;
+    
 }
 
-#partner h2,
-#partner h3 {
+
+
+#banner h2,
+#banner h3 {
     color: #fff;
 }
 
-.partners ul li a img{
+#banner .btn {
+    border: black 1px solid;
+}
+
+/* .banners ul li a img{
     margin: 0 auto;
 }
 
-.partners ul {
+.banners ul {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-.partners ul li {
+.banners ul li {
     display: inline-block;
     float: left;
     width: 20%;
-}
+} */
 
-#conatcat-info {
+/* #conatcat-info {
     background: #fff url(../images/contact.png) no-repeat 90% 0;
     padding: 30px 0;
 }
@@ -1231,7 +1321,7 @@ a.accordion-toggle i {
     color: #000;
 }
 
-/*testimonial slider*/
+testimonial slider
 
 #testimonial{
     background-color: #FAFAFA;
@@ -1275,35 +1365,22 @@ a.accordion-toggle i {
     display: inline-block;
     margin: 0 5px;
     border-radius: 50%;
-    border: 1px solid #EC5538;
+    border: 1px solid #b90b0bf8;
 }
 .testimonial-slider .owl-dot.active{
-    background-color: #EC5538;
-}
+    background-color: #b90b0bf8;
+} */
 
 /*************************
 ********* About Us Page CSS ******
 **************************/
 #about-page{
-    /* background-image: url("https://heidigally.files.wordpress.com/2020/10/muscles-2525200_1280.jpg"); */
-    background-image: 'src/images/backgroundMuscles.jpg';
-    height: 1283px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    /* background-position: center center; */
-    background-position: 75% 25%;
-    
    
-    /* width: 800px; */
-
-
-
-    
 
 }
 
 .about-img{
-    /* padding-right: 10px; */
+   
     border: black 2px solid;
 }
 
@@ -1328,61 +1405,10 @@ a.accordion-toggle i {
 
 
 .mb-3 {
-    margin: 20px;
+    margin: 30px;
     
 }
 
-
-
-
-
-/* .single-team img{
-    width: 100%;
-}
-
-.single-team{
-    margin-bottom: 30px;
-}
-.single-team .inner{
-    background: #fff;
-    text-align: center;    
-    color: #989898;
-    font-size: 16px;
-    -webkit-transition: .4s;
-    transition: .4s;
-    border-radius: 5px;
-    overflow: hidden;
-}
-
-.single-team .inner:hover{
-    -webkit-box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
-}
-
-
-.single-team .team-content{
-    padding: 30px 0;
-}
-.single-team h4{
-    font-size: 20px;
-    font-weight: 700;
-    color: #333;
-    margin-top: 0;
-}
-.single-team .team-social{
-    margin-top: 15px;
-}
-.single-team .team-social a{
-    color: #989898;
-    padding: 5px;
-    margin: 0 10px;
-    -webkit-transition: .4s;
-    transition: .4s;
-}
-
-.single-team .team-social a:hover{
-    color: #EC5538;
-} */
 
 
 
@@ -1422,7 +1448,7 @@ a.accordion-toggle i {
 }
 
 .request h4 a {
-    background: #EC5538;
+    background: #b90b0bf8;
     color: #fff;
     font-size: 14px;
     font-weight: normal;
@@ -1431,7 +1457,7 @@ a.accordion-toggle i {
 }
 
 .request h4:after {
-    border-color: #EC5538 transparent transparent;
+    border-color: #b90b0bf8 transparent transparent;
     border-style: solid;
     border-width: 12px;
     bottom: -18px;
@@ -1443,7 +1469,7 @@ a.accordion-toggle i {
 }
 
 .request h4:before {
-    border-color: #EC5538 transparent transparent;
+    border-color: #b90b0bf8 transparent transparent;
     border-style: solid;
     border-width: 12px;
     bottom: -18px;
@@ -1495,7 +1521,7 @@ a.accordion-toggle i {
 
 .footer {
     background: none repeat scroll 0 0 #2E2E2E;
-    border-top: 5px solid #EC5538;
+    border-top: 5px solid #b90b0bf8;
     height: 84px;
     margin-top: 110px;
 }
@@ -1515,7 +1541,7 @@ a.accordion-toggle i {
 ********* Portfolio CSS ******
 **************************/
 
-#portfolio_page {
+/* #portfolio_page {
     margin-top: 115px;
     padding-bottom: 0;
 }
@@ -1549,8 +1575,8 @@ a.accordion-toggle i {
 .portfolio-filter>li a:hover,
 .portfolio-filter>li a.active {
     color: #fff;
-    background: #EC5538;
-    border: 1px solid #EC5538;
+    background: #b90b0bf8;
+    border: 1px solid #b90b0bf8;
     box-shadow: none;
     -webkit-box-shadow: none;
 }
@@ -1565,7 +1591,7 @@ a.accordion-toggle i {
 .portfolio-item {
     margin: 0;
     padding: 0;
-}
+} */
 
 
 /* Start: Recommended Isotope styles */
@@ -1699,7 +1725,7 @@ section.pricing{
 }
 
 .single-pricing.featured a{
-    background-color: #EC5538;
+    background-color: #b90b0bf8;
     color: #fff;
 }
 
@@ -1863,12 +1889,12 @@ aside .widget {
 }
 
 .blog_category li a:hover {
-    background: #EC5538;
+    background: #b90b0bf8;
     color: #fff;
 }
 
 .badge:before {
-    border-color: transparent transparent transparent #EC5538;
+    border-color: transparent transparent transparent #b90b0bf8;
     border-style: solid;
     border-width: 10px;
     bottom: -8px;
@@ -1880,7 +1906,7 @@ aside .widget {
 }
 
 .badge {
-    background-color: #EC5538;
+    background-color: #b90b0bf8;
     border-radius: 5px;
     color: #fff;
     padding: 8px;
@@ -2062,7 +2088,7 @@ ul.faq li>div h3 {
 }
 
 .publish_date {
-    background: #EC5538;
+    background: #b90b0bf8;
     border-bottom: 5px solid #4e4e4e;
     color: #fff;
     padding: 5px 0;
@@ -2105,7 +2131,7 @@ ul.pagination>li>a i {
 
 ul.pagination>li.active>a,
 ul.pagination>li:hover>a {
-    background-color: #EC5538 ;
+    background-color: #b90b0bf8 ;
     color: #fff;
 }
 
@@ -2120,7 +2146,7 @@ ul.pagination>li:last-child > a{
 ul.pagination>li:first-child > a:hover, 
 ul.pagination>li:last-child > a:hover{
     background-color: transparent;
-    color: #EC5538;
+    color: #b90b0bf8;
 }
 
 
@@ -2156,7 +2182,7 @@ ul.pagination>li:last-child > a{
     background-color: transparent;
 }
 .widget.search form button i{
-    color: #EC5538;
+    color: #b90b0bf8;
 }
 
 .search_box {
@@ -2197,7 +2223,7 @@ ul.sidebar-gallery {
 }
 
 .tag-cloud li a:hover {
-    background: #EC5538;
+    background: #b90b0bf8;
     color: #fff;
 }
 
@@ -2252,7 +2278,7 @@ ul.sidebar-gallery{
 }
 
 .widget.social_icon a:hover{
-    background-color: #EC5538;
+    background-color: #b90b0bf8;
     color: #fff;
 }
 
@@ -2272,7 +2298,7 @@ ul.sidebar-gallery{
     color: #989898;
 }
 .post-meta p i{
-    color: #EC5538;
+    color: #b90b0bf8;
 }
 .post-meta p a{
     color: #989898;
@@ -2280,7 +2306,7 @@ ul.sidebar-gallery{
     transition: .4s;
 }
 .post-meta p a:hover{
-    color: #EC5538;
+    color: #b90b0bf8;
 }
 .post-meta p a.fa{
     padding: 0 6px;
@@ -2311,7 +2337,7 @@ ul.sidebar-gallery{
 }
 
 .inner-meta .social-btns a{
-    background-color: #EC5538;
+    background-color: #b90b0bf8;
     color: #fff;
     display: inline-block;
     line-height: 30px;
@@ -2393,7 +2419,7 @@ ul.sidebar-gallery{
 }
 
 .comment-count a:last-child i{
-    color: #EC5538;
+    color: #b90b0bf8;
 }
 
 .comments .single-comment .comment-content h5{
@@ -2426,7 +2452,7 @@ ul.sidebar-gallery{
     border: none;
     line-height: 42px;
     padding: 0 35px;
-    background-color: #EC5538;
+    background-color: #b90b0bf8;
     border-radius: 3px;
     margin-left: auto;
     margin-top: 15px;
@@ -2508,11 +2534,20 @@ shortcodes page css
     display: inline-block;
 }
 #bottom {
+    height: 35vh;
     background:#000;
     border-bottom: 5px solid #b63217d3;
     border-top: 5px solid #b63217d3;
-    font-size: 14px;
-    padding: 70px 0;
+    font-size: 17px;
+    padding-top: 50px;
+   
+}
+
+#bottom .footer-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
 }
 
 #bottom h3 {
@@ -2541,7 +2576,7 @@ shortcodes page css
 }
 
 #bottom ul li a:hover {
-    color: #EC5538;
+    color: #b90b0bf8;
 }
 
 #bottom .widget {
@@ -2549,7 +2584,7 @@ shortcodes page css
     padding-left: 15px;
 }
 
-#footer {
+/* #footer {
     padding-top: 30px;
     padding-bottom: 30px;
     color: #fff;
@@ -2562,7 +2597,7 @@ shortcodes page css
 }
 
 #footer a:hover {
-    color: #EC5538;
+    color: #b90b0bf8;
 }
 
 #footer ul {
@@ -2574,4 +2609,4 @@ shortcodes page css
 #footer ul>li {
     display: inline-block;
     margin-left: 15px;
-}
+} */

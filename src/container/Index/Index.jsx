@@ -34,7 +34,7 @@ class Index extends Component {
 				                        <span className="icon-bar"></span>
 				                    </button>
 				                   
-									<a href="#/ " className="navbar-brand">
+									<a href="/" className="navbar-brand">
 										<img src={require('../../images/Logo2.png')} className="logo" height='250' width='250'  />
 									</a>
 				                </div>
@@ -68,19 +68,18 @@ class Index extends Component {
 
 			
 
-					<div>
-						<section id="bottom">
+					<div id="bottom">
 			    			<div className="container fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
 			        			<div className="row">
 			            			<div className="col-md-2">
 										<a href="#" className="navbar-brand">
-										<img src={require('../../images/Logo-3.png')} className="logo" height='250' width='250' />
+										<img src={require('../../images/Logo-3.png')} className="footer-logo" height='250' width='250' />
 										</a>
 			            			</div>
 					
 					
 									<div className="col-md-10">
-										<div className="row">
+										<div className="row footer-bar">
 											
 											<div className="col-md-3">
 												<div className="widget">
@@ -112,7 +111,7 @@ class Index extends Component {
 								
 							</div>
 						
-						</section>
+						
 					</div>
 				</div>
 			

@@ -5,14 +5,11 @@ class Services extends Component {
     render() {
         return (
             <div className="body">
-				<div className="page-title">
-			        <h1>Services</h1> 
-			    </div>
 
 			    <section id="features" className="service-item">
 			        <div className="container">
 			            <div className="center fadeInDown">
-			              
+							<h1>Services</h1> 
 			                <p className="lead">Transforming your body comes from having a strategic plan, designed individually for your body and your lifestyle. After that, it’s consistency and commitment that creates the results you’re searching for. Most of the time, people make it out to be more complicated than it needs to be…
 
 This is exactly where I come in to provide the solution for your personal breakthrough. I create a completely individualized plan in a simplified way so you can actually stick to it long-term (both training and nutrition).</p>
@@ -39,13 +36,15 @@ This is exactly where I come in to provide the solution for your personal breakt
                     </div>
 			    </section>
 
-			    <section id="partner">
+			    <section id="banner" className="section static banner">
 			        <div className="container">
-			            <div className="center fadeInDown">
-			                <h2>Sign up</h2>
-			                <p className="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut et dolore magna aliqua. Ut enim ad minim veniam</p>
-			            </div>
+			            <div className="center">
+							<a href="/signup" className="btn btn-primary btn-top">
+			                	<h2>START MY TRANSFORMATION TODAY!</h2>
+							</a>
 			            
+			            </div>
+
 			        </div>
 			    </section>
 			</div>
