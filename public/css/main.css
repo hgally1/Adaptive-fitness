@@ -426,7 +426,7 @@ input.search-form:hover {
 }
 
 .img-whyus::after {
-    background-image: url(https://heidigally.files.wordpress.com/2020/10/muscles-2525200_1280.jpg); 
+    /* background-image: url(https://heidigally.files.wordpress.com/2020/10/muscles-2525200_1280.jpg);  */
     
 }
 
@@ -435,7 +435,7 @@ input.search-form:hover {
 }
 
 .banner::after {
-    background-image: url(https://heidigally.files.wordpress.com/2020/11/fitness-3167418_1280.jpg);
+    /* background-image: url(https://heidigally.files.wordpress.com/2020/11/fitness-3167418_1280.jpg); */
 }
 
   
