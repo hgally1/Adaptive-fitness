@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.js": "/static/js/main.e0e27063.chunk.js",
+    "main.js.map": "/static/js/main.e0e27063.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.e93d83c4.js",
+    "runtime-main.js.map": "/static/js/runtime-main.e93d83c4.js.map",
+    "static/js/2.6c4d2c89.chunk.js": "/static/js/2.6c4d2c89.chunk.js",
+    "static/js/2.6c4d2c89.chunk.js.map": "/static/js/2.6c4d2c89.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.9e2f5492972ccdb82e98580d0c58320f.js": "/precache-manifest.9e2f5492972ccdb82e98580d0c58320f.js",
+    "service-worker.js": "/service-worker.js",
+    "static/js/2.6c4d2c89.chunk.js.LICENSE.txt": "/static/js/2.6c4d2c89.chunk.js.LICENSE.txt",
+    "static/media/Jai-back.jpeg": "/static/media/Jai-back.f21e9286.jpeg",
+    "static/media/Jai-kneel.JPG": "/static/media/Jai-kneel.4a610fef.JPG",
+    "static/media/Jai-smiling.jpg": "/static/media/Jai-smiling.dc1efd3f.jpg",
+    "static/media/Logo-3.png": "/static/media/Logo-3.83bc7b67.png",
+    "static/media/Logo.png": "/static/media/Logo.b6a9d571.png",
+    "static/media/Logo2.png": "/static/media/Logo2.d0ac4b2b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e93d83c4.js",
+    "static/js/2.6c4d2c89.chunk.js",
+    "static/js/main.e0e27063.chunk.js"
+  ]
+}

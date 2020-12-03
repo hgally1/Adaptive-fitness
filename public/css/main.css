@@ -1,5 +1,5 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800);
-
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,600,700,300,800); 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 /*************************
 *******Typography******
 **************************/
@@ -422,6 +422,7 @@ input.search-form:hover {
 
 .img-1::after {
     background-image: url('https://images.unsplash.com/photo-1547060425-8429076d4b4c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=brocnbells-com-team-o_AKuNfcFyM-unsplash.jpg');
+    
 }
 
 .img-whyus::after {
@@ -450,7 +451,7 @@ input.search-form:hover {
     align-items:center;
     justify-content:center;
     flex-direction:column;
-    
+    height:140vh;
     /* align-self: center; */
     /* height:100vh;
     position:relative;  */
@@ -496,10 +497,10 @@ input.search-form:hover {
     padding: 0;
     margin-bottom: 5px;
     margin-top: 70px;
-    color: #b90b0bf8;
+    color: #000000f8;
    
-    text-shadow: 2px 2px 0 #0C0503, 2px -2px 0 #0C0503, -2px 2px 0 #0C0503, -2px -2px 0 #0C0503, 2px 0px 0 #0C0503, 0px 2px 0 #0C0503, -2px 0px 0 #0C0503, 0px -2px 0 #0C0503;
-    color: #b90b0bf8;
+    text-shadow: 2px 2px 0 #b90b0bf8, 2px -2px 0 #b90b0bf8, -2px 2px 0 #b90b0bf8, -2px -2px 0 #b90b0bf8, 2px 0px 0 #b90b0bf8, 0px 2px 0 #b90b0bf8, -2px 0px 0 #b90b0bf8, 0px -2px 0 #b90b0bf8;
+    color: #000000f8;
    
 }
     
@@ -525,7 +526,7 @@ input.search-form:hover {
 /* CHOOSE COACHING NEEDS */
 
 #feature {
-    padding-bottom: 40px;
+    /* padding-bottom: 20px; */
     height: 140vh
     
 }
@@ -546,7 +547,7 @@ input.search-form:hover {
     
     height: 280px;
     text-align: center;
-    align: center;
+    box-align: center;
     line-height: 40px;
     color: #D0D0D0;
 
@@ -799,6 +800,9 @@ input.search-form:hover {
 
 /* Instagram */
 
+#recent-works {
+    height: 90vh;
+}
 /* #recent-works {
     background-color: #FAFAFA;
 }
@@ -1249,7 +1253,7 @@ a.accordion-toggle i {
     top: 50%;
     margin-top: -5px;
     background: #FFF;
-    -webkit-transform: rotate(45deg);
+    --webkit-transform: rotate(45deg);
     border: 1px solid #e7e7e7;
     right: -5px;
     border-left: 0 none;
@@ -1374,19 +1378,16 @@ testimonial slider
 /*************************
 ********* About Us Page CSS ******
 **************************/
-#about-page{
-   
 
-}
 
 .about-img{
    
-    border: black 2px solid;
+    border: #b90b0bf8  5px solid;
 }
 
 .about-content{
-    background-color: #FFFFFF;
-    color: black;
+    background-color: black;
+    color: white;
     opacity:0.6;
     font-size: 16px;
     /* line-height: 26px; */
@@ -1397,12 +1398,14 @@ testimonial slider
 
 .about-content h2{
     font-size: 48px;
-    color: #333333;
+    color: #7c1919;
     font-weight: 700;
     margin: 0 0 25px;
 }
 
-
+.about-content p{
+    font-size: 20px;
+}
 
 .mb-3 {
     margin: 30px;
@@ -1782,7 +1785,7 @@ textarea#message {
 .large-title h2{
     font-size: 48px;
     font-weight: 700;
-    color: #222;
+    color: #b90b0bf8 ;
 }
 
 
@@ -2070,7 +2073,7 @@ ul.faq li>div h3 {
     font-size: 14px;
 }
 
-.post-tags {}
+
 
 .blog .blog-item .entry-meta {
     border-radius: 5px;
@@ -2234,7 +2237,7 @@ ul.sidebar-gallery{
     display: inline-block;
     margin: 15px 0;
     width: 50%;
-    float: left;
+    /* float: left; */
 }
 
 .sidebar-gallery li a {
