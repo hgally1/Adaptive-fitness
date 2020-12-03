@@ -1,4 +1,5 @@
 import React from 'react';
+import Banner from '../../images/banner-img.jpg';
 
 const AboutPage = () => (
     <div>
@@ -78,7 +79,13 @@ const AboutPage = () => (
 				
 						
 					</div>
-					<section id="banner" className="section static banner">
+					<section id="banner" className="section static banner"
+					style={{
+						backgroundImage: `url(${Banner})`,
+						backgroundPosition: 'center',
+						backgroundSize: 'cover',
+						backgroundRepeat: 'no-repeat'
+					}}>
 			        <div className="container">
 			            <div className="center">
 							<a href="/signup" className="btn btn-primary btn-top">

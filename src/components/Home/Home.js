@@ -3,6 +3,9 @@ import React, { Component } from 'react';
 import ServicesSection from '../Services/ServicesSection';
 //import PricingTable from '../../components/PricingTable/PricingTable.jsx';
 //import	Package1 from '../../components/Packages/Package1';
+import Background from '../../images/muscles.jpg';
+import Banner from '../../images/banner-img.jpg'
+
 
 class Home extends Component {
     render() {
@@ -83,7 +86,13 @@ class Home extends Component {
 
 {/* small section on what adaptive fitness is about */}
 				
-					<div id="adaptfit" className="section parallax img-whyus">
+					<div id="adaptfit" className="section parallax img-whyus" 
+						style={{
+							backgroundImage: `url(${Background})`,
+							backgroundPosition: 'center',
+							backgroundSize: 'cover',
+							backgroundRepeat: 'no-repeat'
+            			}}>
 						{/* <img src={require('../../images/backgroundMuscles.jpg')} /> */}
 					
 						<div className="container fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
@@ -189,7 +198,13 @@ Unlike most coaching services, my fitness and nutrition programs are customized 
 			    </section>
 
 				{/* <section id="banner" >  */}
-			    <section id="banner" className="section static banner"> 
+			    <section id="banner" className="section static banner"
+				style={{
+					backgroundImage: `url(${Banner})`,
+					backgroundPosition: 'center',
+					backgroundSize: 'cover',
+					backgroundRepeat: 'no-repeat'
+				}}> 
 			        <div className="container">
 			            <div className="center">
 							<a href="/signup" className="btn btn-primary btn-top">
