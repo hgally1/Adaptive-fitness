@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "adaptive-fitness-150bb"
+    "default": "adaptivefitness-e5d0e",
+    "deploy": "adaptivefitness-e5d0e"
   }
 }

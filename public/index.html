@@ -11,7 +11,8 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
     <!-- <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico"> -->
     
-
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,800;1,400;1,800&display=swap" rel="stylesheet">
 
     <!-- core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -26,7 +27,6 @@
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
-
       Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
@@ -41,10 +41,8 @@
     <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
-
       You can add webfonts, meta tags, or analytics to this file.
       The build step will place the bundled scripts into the <body> tag.
-
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
@@ -58,36 +56,18 @@
 
 
 
-<!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="/__/firebase/8.0.1/firebase-app.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="/__/firebase/8.0.1/firebase-app.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="/__/firebase/8.0.1/firebase-analytics.js"></script>
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="/__/firebase/8.0.1/firebase-analytics.js"></script>
+    <script src="/__/firebase/8.1.1/firebase-auth.js"></script>
+    <script src="/__/firebase/8.1.1/firebase-firestore.js"></script>
+    <!-- Initialize Firebase -->
+    <script src="/__/firebase/init.js"></script>
 
-<!-- Initialize Firebase -->
-<script src="/__/firebase/init.js"></script>
 
-<script>
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: "AIzaSyBa52Hal21EyUo_ZPzHOLDdQlA6Vx2Yzaw",
-    authDomain: "adaptive-fitness-150bb.firebaseapp.com",
-    databaseURL: "https://adaptive-fitness-150bb.firebaseio.com",
-    projectId: "adaptive-fitness-150bb",
-    storageBucket: "adaptive-fitness-150bb.appspot.com",
-    messagingSenderId: "341814755387",
-    appId: "1:341814755387:web:e55a1a4abd24efde699c1e",
-    measurementId: "G-VHXDPR7QRQ"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
 
   </body>
 </html>
-
-
-
