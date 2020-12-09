@@ -9,11 +9,14 @@ import * as ROUTES from '../../constants/routes';
 
 const SignInPage = () => (
   <div>
-    <div className="login">
+    <div id="login-page" className="login">
       <div className="card col-12 col-lg-4 login-card mt-2 hv-center">
-      <div className="form-group text-center">
-        <h1>SignIn</h1>
+      <div className="text-center">
+      <br/>
+        <h1><u>Sign In</u></h1>
+        <br />
         <SignInForm />
+        <SignInGoogle />
         <PasswordForgetLink />
         <SignUpLink />
         </div>
@@ -77,7 +80,8 @@ class SignInFormBase extends Component {
     return (
       
           <form onSubmit={this.onSubmit}>
-            {/* <div className="form-group text-center"> */}
+            <div className="d-flex justify-content-center">
+            <div className="form-group text-center">
               
               <input
                 name="email"
@@ -87,8 +91,8 @@ class SignInFormBase extends Component {
                 placeholder="Email Address"
               />
               
-            {/* </div> */}
-            {/* <div className="form-group text-center"> */}
+            </div>
+            <div className="form-group text-center">
                 
                 <input
                   name="password"
@@ -97,14 +101,15 @@ class SignInFormBase extends Component {
                   type="password"
                   placeholder="Password"
                 />
-              {/* </div> */}
+              </div>
               {/* <div className="form-check"> */}
               {/* </div> */}
-              {/* <div className="form-group text-center"> */}
-            <button disabled={isInvalid} type="submit">
+              <div className="form-group text-center">
+            <button className="btn btn-primary" disabled={isInvalid} type="submit">
               Sign In
             </button>
-            {/* </div> */}
+            </div>
+            </div>
 
             {error && <p>{error.message}</p>}
           </form>
@@ -152,7 +157,7 @@ class SignInFormBase extends Component {
      return (
        <form onSubmit={this.onSubmit}>
          <div className="form-group text-center">
-         <button type="submit">Sign In with Google</button>
+         <button className="btn btn-primary" type="submit">Sign In with Google</button>
          </div>
 
          {error && <p>{error.message}</p>}

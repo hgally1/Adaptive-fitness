@@ -5,10 +5,10 @@ const ServicesSection = (props) => {
 	return (
 		<div className="d-flex justify-content-center">
 			<div className="features">
-				<div className="col-md-3 fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+				<div className="col-md-4 fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
 					<div className="feature-wrap">
 						<div className="icon">
-							<img src={props.img} className={props.img}></img>
+							<img src={props.img} className={props.img} alt="service-img"></img>
 						</div>
 						<div>
 						<h2>{props.title}</h2>

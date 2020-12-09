@@ -46,15 +46,17 @@ class UserList extends Component {
         <ul>
           {users.map(user => (
             <li key={user.uid}>
-              <span>
+              {/* <span>
                 <strong>ID:</strong> {user.uid}
-              </span>
-              <span>
-                <strong>E-Mail:</strong> {user.email}
-              </span>
+              </span> */}
               <span>
                 <strong>Username:</strong> {user.username}
               </span>
+              
+              <span>
+                <strong>E-Mail:</strong> {user.email}
+              </span>
+          
               <span>
                 <Link
                   to={{

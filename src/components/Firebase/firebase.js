@@ -1,6 +1,7 @@
 import app from 'firebase/app';
 import 'firebase/auth';
 import 'firebase/database';
+//import 'firebase/firestore';
 
 const config = {
   apiKey: process.env.REACT_APP_API_KEY,
@@ -30,6 +31,13 @@ class Firebase {
 
     this.googleProvider = new app.auth.GoogleAuthProvider();
     
+    //     this.fieldValue = app.firestore.FieldValue;
+    // this.emailAuthProvider = app.auth.EmailAuthProvider;
+
+    /* Firebase APIs */
+
+    // this.auth = app.auth();
+    // this.db = app.firestore();
   }
 
   // *** Auth API ***
