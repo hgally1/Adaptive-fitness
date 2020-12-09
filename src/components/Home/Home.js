@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+// import { Link } from 'react-router-dom';
 // import PricingTable from '../../components/PricingTable/PricingTable';
 import ServicesSection from '../Services/ServicesSection';
 //import PricingTable from '../../components/PricingTable/PricingTable.jsx';
@@ -12,12 +13,12 @@ class Home extends Component {
         return (
             <div className="body wrapper">
 				<div id="main" className="section parallax img-1">
-					<div className="container fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+					<div className="container d-flex justify-content-center fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
 						<div className="row">
 							<div className="center fadeInDown">
 								<div className="content" >
 									{/* <h1 className="home-title">Adaptive Fitness</h1> */}
-									<h1 className="home-title">Online Fitness and Nutrition Coaching</h1>
+									<h1 className="home-title">Get Fit On Your Terms!</h1>
 									<p className="home-title">
 										Helping real people, like you, get real results
 									</p>
@@ -42,8 +43,9 @@ class Home extends Component {
 						
 						
 						
-
-			         	 	<div className="row">
+						
+			         	 	<div className="row center" >
+							  
 							  {/* <PricingTable /> */}
 								{/* <Package1 /> */}
 								<ServicesSection
@@ -55,24 +57,18 @@ class Home extends Component {
 								
 								<ServicesSection
 									title="Nutrition Plans"
-									desc= "Nutrition plans designed for taking the guess work out of what to eat."
+									desc="Nutrition plans, based on weight and sex, designed for taking the guess work out of what to eat."
 									img= "https://images.unsplash.com/photo-1587678711204-ca6d3d2f1f3b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=alex-motoc-v77vc1iAK18-unsplash.jpg&w=640"
 									href= "/package2"
 								/>
 								
 								<ServicesSection
-									title="Fitness & Nutrition"
-									desc="Take the stress out of fitness and nutrition! No more worrying about what to eat, how to exercise, or what to do next. Your only job is to show up and follow the plan"
+									title="Personal Coaching"
+									desc="Take the stress out of fitness and nutrition! No more worrying about what to eat, how to exercise, or what to do next."
 									img="https://images.unsplash.com/photo-1558017487-06bf9f82613a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=derick-mckinney-__QqvTI5Edc-unsplash.jpg"
 									href= "/package3"
 								/>
-
-								<ServicesSection
-									title="Physical Training"
-									desc="Personalized and adaptive fitness & nutrition coaching"
-									img="https://images.unsplash.com/photo-1558017487-06bf9f82613a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=derick-mckinney-__QqvTI5Edc-unsplash.jpg"
-									href= "/package4"
-								/>
+								
 
 								
 						 	</div>
@@ -86,12 +82,14 @@ class Home extends Component {
 
 {/* small section on what adaptive fitness is about */}
 				
-					<div id="adaptfit" className="section parallax img-whyus" 
+					<div id="adaptfit" className="section parallax" 
 						style={{
-							backgroundImage: `url(${Background})`,
-							backgroundPosition: 'center',
-							backgroundSize: 'cover',
-							backgroundRepeat: 'no-repeat'
+							
+								backgroundImage: `url(${Background})`,
+								backgroundPosition: 'center',
+								backgroundSize: 'cover',
+								backgroundRepeat: 'no-repeat'
+							
             			}}>
 						{/* <img src={require('../../images/backgroundMuscles.jpg')} /> */}
 					
@@ -99,10 +97,10 @@ class Home extends Component {
 							<div className="row">
 								<div className="center fadeInDown">
 									<div className="content" >
-									<h2>Why Adaptive Fitness?</h2>
-									------------------------                  <img src={require('../../images/Logo.png')} className="logo" height='250' width='250' />               ------------------------
-									<p className="lead">MOST FITNESS AND DIET PLANS FAIL BECAUSE THEY'RE TOO GENERIC. HOW GOOD WOULD IT FEEL TO FINALLY HAVE THE BODY YOU WANT AND NEVER STRESS ABOUT WHAT TO EAT OR HOW TO EXERCISE EVER AGAIN?.... 
-Unlike most coaching services, my fitness and nutrition programs are customized to your schedule, your preferences, and your level of experience. My mission is simple: To bring an effective, personalized approach to health and fitness that anyone can use to get in better shape — even if they’ve tried and failed before.</p>
+									<h2><strong>Why Adaptive Fitness?</strong></h2>
+									------------------------                  <img src={require('../../images/Logo.png')} className="logo" alt="logo" height='250' width='250' />               ------------------------
+									<p className="lead"><strong>MOST FITNESS AND DIET PLANS FAIL BECAUSE THEY'RE TOO GENERIC. HOW GOOD WOULD IT FEEL TO FINALLY HAVE THE BODY YOU WANT AND NEVER STRESS ABOUT WHAT TO EAT OR HOW TO EXERCISE EVER AGAIN?....</strong> 
+Unlike most coaching services, my personal coaching program is customized to fit you, your schedule, your preferences, and your level of experience. My mission is simple: To bring an effective, personalized approach to health and fitness that anyone can use to get in better shape — even if they’ve tried and failed before.</p>
 									</div>
 								</div>
 							</div>
@@ -188,7 +186,9 @@ Unlike most coaching services, my fitness and nutrition programs are customized 
 			                <h2>CONNECT WITH ME</h2>
 			                <p className="lead">#adaptivefitness</p>
 							<p>______________________________________</p>
-							<a className="fa fa-instagram" href="{}"></a> 
+							{/* <Link to={{ pathname: "https://www.instagram.com/adaptivefitt/" }} target="_blank" className="fa fa-instagram"/> */}
+							<a className="fa fa-instagram" rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/adaptivefitt/"></a>
+								
 							
 							
 			            </div>

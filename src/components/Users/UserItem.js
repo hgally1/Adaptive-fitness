@@ -48,9 +48,9 @@ class UserItem extends Component {
 
         {user && (
           <div>
-            <span>
+            {/* <span>
               <strong>ID:</strong> {user.uid}
-            </span>
+            </span> */}
             <span>
               <strong>E-Mail:</strong> {user.email}
             </span>

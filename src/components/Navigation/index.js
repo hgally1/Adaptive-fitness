@@ -40,7 +40,7 @@ const NavigationAuth = ({ authUser }) => (
                         <li className="home-nav "><Link to={ROUTES.DASHBOARD}>Dashboard</Link></li>
             
                         <li className=""><Link to={ROUTES.ACCOUNT}>Account</Link></li>
-                        {!!authUser.roles[ROLES.ADMIN] && (
+                         {!!authUser.roles[ROLES.ADMIN] && (
                           <li>
                             <Link to={ROUTES.ADMIN}>Admin</Link>
                           </li>
@@ -81,7 +81,7 @@ const NavigationNonAuth = () => (
                         <li className=""><Link to={ROUTES.SERVICES}>Services</Link></li>
                         
                         <li className=""><Link to={ROUTES.SIGN_IN}>Sign In</Link></li>
-                        <li className=""><a href="#"><i className="fa fa-instagram"></i></a></li>
+                        <li className=""><a className="fa fa-instagram" rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/adaptivefitt/"></a></li>
                     </ul>
                 </div>
             </div>

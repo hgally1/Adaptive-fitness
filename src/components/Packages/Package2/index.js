@@ -6,14 +6,24 @@ const Package2 = () => (
 			    <section id="features" className="service-item">
 			        <div className="container">
 			            <div className="center fadeInDown">
-							<h1>Nutrition Plan</h1> 
-			                <p className="lead">Transforming your body comes from having a strategic plan, designed individually for your body and your lifestyle. After that, it’s consistency and commitment that creates the results you’re searching for. Most of the time, people make it out to be more complicated than it needs to be…
-
-This is exactly where I come in to provide the solution for your personal breakthrough. I create a completely individualized plan in a simplified way so you can actually stick to it long-term (both training and nutrition).</p>
+							<h1><u>Nutrition Plans</u></h1> 
+			                <p className="lead">"Nutrition plans, based on weight and sex, designed for taking the guess work out of what to eat."</p>
 			            </div> 
 
-			            <div className="btns">
-							<a className="btn btn-primary btn-top" href="/signup">Sign Up</a>
+						<div className="row center">
+							<h1><strong>$40</strong></h1>
+						</div>
+						
+						<div className="row center">
+						<ul class="list-unstyled">
+							<li>Do on your own!</li>
+							<li>Cost Effecient!</li>
+							<li>Choose from pre-made nutrition guides based on weight & sex</li>
+						</ul>
+						</div>
+
+			            <div className="btns center">
+							<a className="btn btn-primary btn-top" href="/register">Let's do it!</a>
 						</div>
                     </div>
                 </section>
