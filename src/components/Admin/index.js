@@ -5,26 +5,20 @@ import { compose } from 'recompose';
 import { withAuthorization, withEmailVerification } from '../Session';
 import { UserList, UserItem } from '../Users';
 import Messages from '../Messages';
-import CalenderPage from '../Calender';
+
 import * as ROLES from '../../constants/roles';
 import * as ROUTES from '../../constants/routes';
 
 const AdminPage = () => (
   <div >
-    <div className="admin">
+    
       
-    <div className="col-sm">
-        <div className="card">
-          <div className="card-body">
-          <CalenderPage />
-    </div>
-    </div>
-    </div>
+  
     
     
-    
-    <div className="card-rows">
-    <div className="col-sm-6">
+    <div className="admin">
+    <div className="card-group">
+    <div className="">
         <div className="card admin-card mb-3">
           <div className="card-body center">
           <h5 className="card-title">Messages</h5>
@@ -42,17 +36,22 @@ const AdminPage = () => (
       </div>
       
      
-      <div className="col-sm-6">
+      <div className="">
         <div className="card admin-card mb-3">
           <div className="card-body center">
-          <h5 className="card-title">Card title</h5>
-          <p className="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-          <p className="card-text"><small className="text-muted">Last updated 3 mins ago</small></p>
+            <h3 className="card-title">Documents</h3>
+            
+              <li><a href="#">Workout Plans</a></li>
+              <li><a href="#">Nutrition Plans</a></li>
+              <li><a href="#">Calculators</a></li>
+            
+            
+            <a href="#" className="btn btn-primary">Go somewhere</a>
+          </div>
         </div>
       </div>
-      </div>
-      <div className="card-rows">
-      <div className="col-sm-6">
+      
+      <div className="">
         <div className="card admin-card mb-3">
           <div className="card-body center">
           <h5 className="card-title">Card title</h5>
@@ -64,7 +63,7 @@ const AdminPage = () => (
       
       
       
-      <div className="col-sm-6">
+      <div className="">
         <div className="card admin-card mb-3">
           <div className="card-body center">
     <Switch>
@@ -77,7 +76,7 @@ const AdminPage = () => (
     
     </div>
     </div>
-    </div>
+    
     
     
     

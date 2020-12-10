@@ -154,6 +154,17 @@ class SignUpFormBase extends Component {
               placeholder="Confirm Password"
             />
           </div>
+          <div className="form-group text-center">
+          <label>
+          Admin:
+          <input
+            name="isAdmin"
+            type="checkbox"
+            checked={isAdmin}
+            onChange={this.onChangeCheckbox}
+          />
+        </label>
+        </div>
         </div>
         <button className="btn btn-primary" disabled={isInvalid} type="submit">
           Sign Up
