@@ -57,20 +57,7 @@ const FooterAuth = ({ authUser }) => (
                       </ul>
                     </div>
                   </div>
-                  <div className="col-md-3">
-                    <div className="widget">
-                      
-                      <ul>
-                        
-                        <li><SignOutButton /></li>
-                        
-                        <li><Link to={ROUTES.HOME}>Home</Link></li>
-                        
-                        
-                        
-                      </ul>
-                    </div>
-                  </div>
+
                 </div>
               </div>
             </div>

@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
-// import { Link } from 'react-router-dom';
-// import PricingTable from '../../components/PricingTable/PricingTable';
+
 import ServicesSection from '../Services/ServicesSection';
-//import PricingTable from '../../components/PricingTable/PricingTable.jsx';
-//import	Package1 from '../../components/Packages/Package1';
+
 import Background from '../../images/muscles.jpg';
-import Banner from '../../images/banner-img.jpg'
+import Banner from '../../images/banner-img.jpg';
+import TestimonialPic1 from '../../images/Angie-before-after.JPG';
 
 
 class Home extends Component {
@@ -13,12 +12,12 @@ class Home extends Component {
         return (
             <div className="body wrapper">
 				<div id="main" className="section parallax img-1">
-					<div className="container d-flex justify-content-center fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+					<div className="container fadeInDown">
 						<div className="row">
 							<div className="center fadeInDown">
-								<div className="content" >
+								<div className="content fadeInDown" >
+									<h1 className="home-title">Online Fitness and Nutrition Coaching</h1>
 									{/* <h1 className="home-title">Adaptive Fitness</h1> */}
-									<h1 className="home-title">Get Fit On Your Terms!</h1>
 									<p className="home-title">
 										Helping real people, like you, get real results
 									</p>
@@ -33,10 +32,39 @@ class Home extends Component {
 					</div>
 				</div>
 
+{/* small section on what adaptive fitness is about */}
+				
+					<section id="adaptfit" className="section static img-adapt" 
+						style={{
+							
+								backgroundImage: `url(${Background})`,
+								backgroundPosition: 'center',
+								backgroundSize: 'cover',
+								backgroundRepeat: 'no-repeat',
+								
+								
+							
+            			}}>
+						
+					
+						<div className="container">
+							<div className="row">
+								<div className="center fadeInDown">
+									<div className="content" >
+									<h2><strong>Why Adaptive Fitness?</strong></h2>
+									------------------------                  <img src={require('../../images/Logo.png')} className="logo" alt="logo" height='250' width='250' />               ------------------------
+									<p className="lead"><strong>MOST FITNESS AND DIET PLANS FAIL BECAUSE THEY'RE TOO GENERIC. HOW GOOD WOULD IT FEEL TO FINALLY HAVE THE BODY YOU WANT AND NEVER STRESS ABOUT WHAT TO EAT OR HOW TO EXERCISE EVER AGAIN?....</strong> 
+Unlike most coaching services, my personal coaching program is customized to fit you, your schedule, your preferences, and your level of experience. My mission is simple: To bring an effective, personalized approach to health and fitness that anyone can use to get in better shape — even if they’ve tried and failed before.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+				</section>
 {/* Coaching Needs */}
-                <section id="feature" className="section static service-item">
+                <section id="feature" className="section static feature " >
 			        <div className="container">
-			            <div className="center fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
+					
+			            <div className="center fadeInDown" >
 			                <h2>CHOOSE YOUR COACHING NEEDS</h2>
 			                <p className="lead"> Appreciating the unique nature of each client is crucial to seeking the best results. However, it’s not only the methods that change from person to person. Not everyone wants the same level of impact as others. While some crave a complete body transformation, others are happy to regain a little self-confidence. Whatever your motives may be, Adaptive Fitness is here to support you throughout the process through a selection of packages.</p>
 			            </div> 
@@ -46,8 +74,7 @@ class Home extends Component {
 						
 			         	 	<div className="row center" >
 							  
-							  {/* <PricingTable /> */}
-								{/* <Package1 /> */}
+							 
 								<ServicesSection
 									title= "Workout Plans"
 									desc= "Fitness training guides to help get you to where you want to be. Whether that's losing weight, toning up, or building muscle."
@@ -80,36 +107,11 @@ class Home extends Component {
 			        </div>
 			    </section>
 
-{/* small section on what adaptive fitness is about */}
-				
-					<div id="adaptfit" className="section parallax" 
-						style={{
-							
-								backgroundImage: `url(${Background})`,
-								backgroundPosition: 'center',
-								backgroundSize: 'cover',
-								backgroundRepeat: 'no-repeat'
-							
-            			}}>
-						{/* <img src={require('../../images/backgroundMuscles.jpg')} /> */}
-					
-						<div className="container fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms">
-							<div className="row">
-								<div className="center fadeInDown">
-									<div className="content" >
-									<h2><strong>Why Adaptive Fitness?</strong></h2>
-									------------------------                  <img src={require('../../images/Logo.png')} className="logo" alt="logo" height='250' width='250' />               ------------------------
-									<p className="lead"><strong>MOST FITNESS AND DIET PLANS FAIL BECAUSE THEY'RE TOO GENERIC. HOW GOOD WOULD IT FEEL TO FINALLY HAVE THE BODY YOU WANT AND NEVER STRESS ABOUT WHAT TO EAT OR HOW TO EXERCISE EVER AGAIN?....</strong> 
-Unlike most coaching services, my personal coaching program is customized to fit you, your schedule, your preferences, and your level of experience. My mission is simple: To bring an effective, personalized approach to health and fitness that anyone can use to get in better shape — even if they’ve tried and failed before.</p>
-									</div>
-								</div>
-							</div>
-						</div>
-				</div>
+
 
 {/* Testimonials */}
 				
-				<section id="testimonials" className="section static">
+				<section id="testimonials" className="section static testimonials">
 					<div className="container">
 						<div className="center fadeInDown">
 							<h2>Here's what people are saying!</h2>
@@ -122,11 +124,32 @@ Unlike most coaching services, my personal coaching program is customized to fit
 								</ol>
 								<div className="carousel-inner">
 
-									<div className="item active slider-img-1">
+			 						<div className="item active slider-img " style={{
+										backgroundImage: `url(${TestimonialPic1})`,
+										// backgroundPosition: 'left',
+										backgroundRepeat: 'no-repeat',
+										backgroundSize: '50%',
+										
+									}}> 
+									
 										<div className="container">
 											<div className="row">
-												<div className="col-md-7">
+												<div className="col-md-8">
 													<div className="carousel-content">
+													<h3>Angie</h3>
+													
+														<h3>Before</h3>
+														<li>Age: </li>
+														<li>Weight: </li>
+														{/* <li>Pant Size: </li>
+														<li>Shirt Size: </li> */}
+													
+													
+														<h3>After</h3>
+														<li>Age: </li>
+														<li>Weight: </li>
+														{/* <li>Pant Size: </li>
+														<li>Shirt Size: </li> */}
 													
 													</div>
 												</div>
@@ -161,24 +184,7 @@ Unlike most coaching services, my personal coaching program is customized to fit
 					
 			    </section>				
 				
-{/* Meet Jai
-			    <section id="about" >
-			        <div className="container">
-			            <div className="center fadeInDown">
-			                <h2>Meet Jai</h2>
-			                <p className="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut  et dolore magna aliqua. Ut enim ad minim veniam
-			                </p>
-			            </div>
-						<div className="jai-image" >
-							<img src={require("../../images/Jai-smiling.jpg")} alt="jai-homepage-img" />
-						</div>
-						<div className="clearfix text-center">
-			                <a href="/about" className="btn btn-primary btn-top">Read More</a>
-			            </div>
 
-			            
-			        </div>
-			    </section> */}
 {/* Instagram */}
 			    <section id="recent-works" className="section static ig">
 			        <div className="container">
@@ -186,8 +192,8 @@ Unlike most coaching services, my personal coaching program is customized to fit
 			                <h2>CONNECT WITH ME</h2>
 			                <p className="lead">#adaptivefitness</p>
 							<p>______________________________________</p>
-							{/* <Link to={{ pathname: "https://www.instagram.com/adaptivefitt/" }} target="_blank" className="fa fa-instagram"/> */}
-							<a className="fa fa-instagram" rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/adaptivefitt/"></a>
+							
+							<a className="fa fa-instagram"  rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/adaptivefitt/"></a>
 								
 							
 							
@@ -222,4 +228,4 @@ Unlike most coaching services, my personal coaching program is customized to fit
 	}
 }
 
-export default Home
+export default Home;

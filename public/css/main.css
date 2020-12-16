@@ -3,12 +3,14 @@
 /*************************
 *******Typography******
 **************************/
+html { font-size:100%; }
 
 body {
+   
     /* background:#331b1b; */
     background-color: black;
-    /* height: 100vh;
-    background-attachment: fixed; */
+    height: 100%; 
+    /* background-attachment: fixed; */
     font-family: 'Open Sans', sans-serif;
     color: #fff;
     line-height: 22px;
@@ -121,9 +123,9 @@ a:focus {
     margin-left: 20px;
 }
 
-.body section {
+/* .body section {
     padding: 70px 0;
-}
+} */
 
 .center {
     text-align: center;
@@ -190,8 +192,9 @@ a:focus {
 **************************/
 
 #header {
-    border-bottom: 2px solid #080201d3;
-    position: relative;
+    /* border-bottom: 2px solid #080201d3; */
+    /* position: relative; */
+    background-color: black;
 }
 
 #header .search {
@@ -287,7 +290,7 @@ input.search-form:hover {
     /* background: rgb(14, 13, 13); */
     
 }
-/* .navbar::before{
+.navbar::before{
     content:"";
     background-color:#000;
     position:absolute;
@@ -296,7 +299,7 @@ input.search-form:hover {
     bottom:0;
     left:0;
     opacity:0.2;
-  } */
+  }
 
 .navbar-nav {
     margin-top: 12px;
@@ -343,7 +346,7 @@ input.search-form:hover {
 }
 
 .navbar-inverse .navbar-nav .dropdown-menu {
-    background-color: rgba(0, 0, 0, .85);
+    background-color: rgba(151, 3, 3, 0.85);
     -webkit-box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.125);
     border: 0;
@@ -390,7 +393,7 @@ input.search-form:hover {
 *******Home Page******
 **************************/
 
-.wrapper {
+ .wrapper {
     height: 100vh;
     overflow-x: hidden;
     overflow-y: auto;
@@ -412,54 +415,50 @@ input.search-form:hover {
     bottom: 0;
     left: 0;
     transform: translateZ(-1px) scale(1.5);
-    background-size: 100%;
+    /* background-size: 100%; */
     z-index: -1;
-}
+} 
 
-.static {
-    background: black;
-}
+/* .static {
+    background-color: black;
+    background-size: cover;
+} */
 
 .img-1::after {
     background-image: url('https://images.unsplash.com/photo-1547060425-8429076d4b4c?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=brocnbells-com-team-o_AKuNfcFyM-unsplash.jpg');
-    background-position: 10% 90%;
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-
-
-
-
-
-  
-
+ /* .feature::after {
+    background-color: black;
+   
+   
+} */
 
 
 #main {
-    color:#fff;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    flex-direction:column;
-    
-   
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
 }
 
-/* #main content {
-    margin-top: 70px;
-} */
 
 
   
 #main h1{
     
-    font-size:70px;
+    font-size:3rem;
     padding: 0;
     margin-bottom: 5px;
-    margin: 20px;
+    /* margin: 20px; */
     margin-top: 100px;
-    color: #000000f8;
-    text-shadow: 2px 2px 0 #b90b0bf8, 2px -2px 0 #b90b0bf8, -2px 2px 0 #b90b0bf8, -2px -2px 0 #b90b0bf8, 2px 0px 0 #b90b0bf8, 0px 2px 0 #b90b0bf8, -2px 0px 0 #b90b0bf8, 0px -2px 0 #b90b0bf8;
-    color: #000000f8;
+    color: #ffffff;
+    text-shadow: 2px 2px 0 #000000f8, 2px -2px 0 #000000f8, -2px 2px 0 #000000f8, -2px -2px 0 #000000f8, 2px 0px 0 #000000f8, 0px 2px 0 #000000f8, -2px 0px 0 #000000f8, 0px -2px 0 #000000f8;
+    color: #ffffff;
 
 }
     
@@ -485,10 +484,11 @@ input.search-form:hover {
 /* CHOOSE COACHING NEEDS */
 
 #feature {
-    /* padding-bottom: 20px; */
-    height: 140vh;
-
+    /* padding-bottom: 40px;
+    margin-bottom:40px;
+    max-height: 240vh; */
     
+    /* display: flex; */
 }
 
 
@@ -497,9 +497,9 @@ input.search-form:hover {
     color: #b90b0bf8;
 }
 
-/* #feature .container .row {
-    margin-left: 80px;
-} */
+#feature .container {
+    position:relative;
+}
 
 
 .features .feature-wrap {
@@ -507,7 +507,7 @@ input.search-form:hover {
     
 }
 
-.features .feature-wrap .icon {
+.features .feature-wrap .img {
     
     
     height: 280px;
@@ -545,12 +545,12 @@ input.search-form:hover {
 
 
 #adaptfit {
-    display:flex;
-    align-items:center;
+     display:flex;
+    /* align-items:center;
     justify-content:center;
-    flex-direction:column;
+    flex-direction:column;   */
     height: 90vh;
-    
+    margin-top: 60px;
 }
 
 
@@ -573,14 +573,13 @@ input.search-form:hover {
 
 /* TESTIMONIALS */
 
-#testimonials {
-    border-top: 2px solid black;
-    
-}
+/* #testimonials {
+    display: flex;
+} */
 
 #testimonials h2 {
     color:  #b90b0bf8;
-}
+} 
 #main-slider {
     position: relative;
 }
@@ -595,6 +594,7 @@ input.search-form:hover {
     font-weight: 400;
     color: #fff;
     line-height: 28px;
+    position: right;
 }
 
 #main-slider .carousel .slide-margin {
@@ -629,20 +629,21 @@ input.search-form:hover {
 
 #main-slider .carousel .slider-img {
     text-align: right;
-    position: absolute;
+    /* position: absolute; */
+    /* height: 130px; */
 }
 
 #main-slider .carousel .item {
-    background-position: 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-position: 100%; */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */ 
     left: 0 !important;
     opacity: 0;
     top: 0;
     position: absolute;
-    width: 100%;
+    /* width: 50%; */
     display: block !important;
-    height: 330px;
+    height: 530px;
     -webkit-transition: opacity ease-in-out 500ms;
     transition: opacity ease-in-out 500ms;
     display: -webkit-box !important;
@@ -740,16 +741,16 @@ input.search-form:hover {
     animation: fadeInUp 300ms linear 1200ms both;
 }
 
-.slider-img-1 {
+/* .slider-img-1 {
     background-image: url(https://images.unsplash.com/photo-1549060279-7e168fcee0c2?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jonathan-borba-zfPOelmDc-M-unsplash.jpg);
-}
+} */
 .slider-img-2 {
     background-image: url(https://images.unsplash.com/photo-1549060279-7e168fcee0c2?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jonathan-borba-zfPOelmDc-M-unsplash.jpg);
 }
 
 /* Meet Jai */
 
-#about {
+/* #about {
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     background-image: url(https://heidigally.files.wordpress.com/2020/11/fitness-3167418_1280.jpg);
@@ -761,7 +762,7 @@ input.search-form:hover {
     justify-content: center;
     height: 350px;
 
-}
+} */
 
 /* Instagram */
 
@@ -841,7 +842,7 @@ input.search-form:hover {
 
 /*  */
 
-.btn-top {
+/* .btn-top {
     margin-top: 50px;
 }
 .services-wrap {
@@ -1223,7 +1224,7 @@ a.accordion-toggle i {
     right: -5px;
     border-left: 0 none;
     border-bottom: 0 none;
-}
+} */
 /* Sign Up Banner */
 
 .banner {
@@ -1339,15 +1340,24 @@ testimonial slider
 .testimonial-slider .owl-dot.active{
     background-color: #b90b0bf8;
 } */
+/*************************
+********* Packages Page CSS ******
+**************************/
+#packages {
+    padding: 1px;
+}
+.card-group{
+    margin-bottom: 30px;
+}
 
 /*************************
-********* About Us Page CSS ******
+********* About Page CSS ******
 **************************/
 
 
 .about-img{
    
-    border: #b90b0bf8  5px solid;
+    border: #581111 5px solid;
 }
 
 .about-content{
@@ -1363,11 +1373,14 @@ testimonial slider
 
 .about-content h2{
     font-size: 48px;
-    color: #7c1919;
+    color: #8a1b1b;
     font-weight: 700;
     margin: 0 0 25px;
 }
-
+.card-body h1{
+    color: #581111;
+    
+}
 .about-content p{
     font-size: 20px;
 }
@@ -1387,7 +1400,7 @@ testimonial slider
 .services {
     padding: 0;
 }
-
+/* 
 .get-started {
     background: none repeat scroll 0 0 #F3F3F3;
     border-radius: 3px;
@@ -1502,7 +1515,7 @@ testimonial slider
     color: #FFFFFF;
     font-size: 12px;
     margin-top: 15px;
-}
+} */
 
 
 /*************************
@@ -2030,10 +2043,10 @@ ul.sidebar-gallery{
 }
 
 
-/******************
+/* *****************
 shortcodes page css
 ******************/
-
+/* 
 .shortcode-item {
     padding-bottom: 0;
 }
@@ -2044,7 +2057,7 @@ shortcodes page css
     margin-bottom: 22px;
     margin-top: 0;
     font-weight: 600
-}
+} */
 
 
 /***********************
