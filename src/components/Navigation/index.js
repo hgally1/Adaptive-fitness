@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 import { AuthUserContext } from '../Session';
 import SignOutButton from '../SignOut';
+// import Logo from '../../images/Logo2.png'
 import * as ROUTES from '../../constants/routes';
 import * as ROLES from '../../constants/roles';
 
@@ -30,7 +31,7 @@ const NavigationAuth = ({ authUser }) => (
                     </button>
                     
           <a href="/" className="navbar-brand">
-            <img src={require('../../images/Logo2.png')} className="logo" height='250' width='250'  />
+          <img src={require('../../images/Logo2.png')} className="logo" height='250' width='250'  />
           </a>
                 </div>
 
