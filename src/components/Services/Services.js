@@ -24,14 +24,14 @@ class Services extends Component {
 								/>
 								
 								<ServicesSection
-									title="Nutrition"
-									desc= "Nutrition plans, based on weight and sex, designed for taking the guess work out of what to eat."
+									title="Nutrition Plans"
+									desc= "Nutrition guides, based on weight and sex, designed for taking the guess work out of what to eat."
 									img= "https://images.unsplash.com/photo-1587678711204-ca6d3d2f1f3b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=alex-motoc-v77vc1iAK18-unsplash.jpg&w=640"
 									href= "/package2"
 								/>
 								
 								<ServicesSection
-									title="Personal Coaching"
+									title="Personal Coaching Plan"
 									desc="Take the stress out of fitness and nutrition! No more worrying about what to eat, how to exercise, or what to do next. Your only job is to show up and follow the plan"
 									img="https://images.unsplash.com/photo-1558017487-06bf9f82613a?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=derick-mckinney-__QqvTI5Edc-unsplash.jpg"
 									href= "/package3"

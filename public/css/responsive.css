@@ -1,17 +1,124 @@
 /* Media Queries: Tablet Landscape */
-@media screen and (max-width: 1060px) {
+/* @media screen and (max-width: 1199px) {
   #primary { width:67%; }
   #secondary { width:30%; margin-left:3%;}  
 }
 
 /* Media Queries: Tabled Portrait */
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px) {
   #primary { width:100%; }
-  #secondary { width:100%; margin:0; border:none; }
+  #secondary { width:100%; margin:0; border:none; } */
+/* } */ 
+/* @media (min-width: 340px) { body {font-size:0.75rem;} }
+
+@media (min-width: 640px) { body {font-size:1rem;} }  */
+
+/* @media (min-width:1100px) { body {font-size:1.5rem;} }  */
+/* lg */
+@media (min-width: 992px) and (max-width: 1399px) {
+  
+  /* Make Navigation Toggle on Desktop Hover */
+   body {font-size:1.5rem;}
+
+   .dropdown:hover .dropdown-menu {
+       display: block;
+       -webkit-animation: fadeInUp 400ms;
+       animation: fadeInUp 400ms;
+   }
+ 
+   .navbar-nav > li {
+     margin-left: 10px;
+   }
+ 
+   .navbar-collapse {
+     padding-left: 0;
+     padding-right: 0;
+   }
+
+   /* #feature .row {
+    margin-left: -10px;
+    margin-right: -10px;
+  } */
+
 }
 
-@media (min-width: 640px) { body {font-size:1rem;} } 
-@media (min-width:960px) { body {font-size:1.2rem;} } 
-@media (min-width:1100px) { body {font-size:1.5rem;} } 
+/* md */
+@media (min-width: 768px) and (max-width: 991px) {
+  body {font-size:1rem;} 
+  #content .tab-pane{
+      padding-left: 0;
+      padding-top: 40px;
+  }
+/* Make Navigation Toggle on Desktop Hover */
+.dropdown:hover .dropdown-menu {
+    display: block;
+    -webkit-animation: fadeInUp 400ms;
+    animation: fadeInUp 400ms;
+}
 
+.navbar-collapse {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.navbar-nav > li {
+  margin-left: 0;
+}
+
+
+}
+
+/* sm */
+@media (max-width: 767px) {
+  body {font-size:0.75rem;}
+  .navbar-nav>li{
+      display: block;
+      margin: 0;
+  }
+  .navbar-inverse .navbar-nav>li>a{
+      display: block;
+  }
+  .navbar-inverse .navbar-nav>.active>a, .navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus, .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus{
+      background-color: transparent;
+  }
+  #error h1{
+      font-size: 60px;
+      line-height: 60px;
+  }
+  #error p{
+      font-size: 30px;
+      line-height: 40px;
+  }
+
+  .container > .navbar-header, .container > .navbar-collapse{
+    margin-left: 0;
+  }
+
+  .navbar-nav > li {
+    padding-bottom: 0;
+  }
+
+  .nav-tabs > li.active > a:after{
+    display: none;
+  }
+
+  #footer .col-sm-6{
+    text-align:center;
+}
+
+ #footer .pull-right{
+    float: none !important;
+}
+
+#testimonials-slider .carousel .item{
+  height: 300px;
+}
+#testimonials .carousel .item{
+height: 300px;
+}
+
+.footer-logo{
+  margin-bottom: 30px;
+}
+}
 

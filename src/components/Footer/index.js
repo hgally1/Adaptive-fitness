@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import { AuthUserContext } from '../Session';
-import SignOutButton from '../SignOut';
+
 import * as ROUTES from '../../constants/routes';
 import * as ROLES from '../../constants/roles';
 
@@ -27,7 +27,7 @@ const FooterAuth = ({ authUser }) => (
           <div className="row">
               <div className="col-md-2">
                 <a href="/home" className="navbar-brand">
-                  <img src={require('../../images/Logo-3.png')} className="footer-logo" alt="logo" height='250' width='250' />
+                  <img src={require('../../images/Logo-3.png')} className="footer-logo" alt="logo"  width='250' />
                 </a>
               </div>
 
@@ -37,7 +37,7 @@ const FooterAuth = ({ authUser }) => (
                   
                   <div className="col-md-3">
                     <div className="widget">
-                      <h3>Site Map</h3>
+                      
                       <ul>
                         
                     
@@ -79,7 +79,7 @@ const FooterNonAuth = () => (
           <div className="row">
               <div className="col-md-2">
                 <a href="/" className="navbar-brand">
-                  <img src={require('../../images/Logo-3.png')} className="footer-logo" alt="logo" height='250' width='250' />
+                  <img src={require('../../images/Logo-3.png')} className="footer-logo" alt="logo"  width='250' />
                 </a>
               </div>
 
@@ -89,7 +89,7 @@ const FooterNonAuth = () => (
                   
                   <div className="col-md-3">
                     <div className="widget">
-                      <h3>Site Map</h3>
+                      
                       <ul>
                         
                     
