@@ -69,10 +69,10 @@ const NavigationNonAuth = () => (
                         
                     </button>
                     
-          <a href="/" className="navbar-brand">
-            <img src={require('../../images/Logo2.png')} className="logo" height='250' width='250'  />
-          </a>
-                </div>
+                    <a href="/" className="navbar-brand">
+                      <img src={require('../../images/Logo2.png')} className="logo" height='250' width='250'  />
+                    </a>
+                  </div>
 
                 <div className="collapse navbar-collapse navbar-right">
                     <ul className="nav navbar-nav">

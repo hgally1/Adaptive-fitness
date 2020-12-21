@@ -2,23 +2,25 @@ import React from 'react';
 import Banner from '../../images/banner-img.jpg';
 
 const AboutPage = () => (
-    <div>
+    
     <div className="body">
 				
-				<div id="about-page">
+				
 				    
 					<div className="about">
 						<div className="container">
-			            	<div className="center fadeInDown mb-3" data-wow-duration="1000ms" data-wow-delay="600ms">
-								
-								{/* <a className="fa fa-instagram" href="{props.instagram}"></a>    */}
-								<img src={require('../../images/Jai-smiling.jpg')} className="about-img" alt="Jai-smiling" height='450' width='960'/>
+			            	<div className="center fadeInDown mb-2" data-wow-duration="1000ms" data-wow-delay="600ms">
+							<div className="card ">
+								<div className="about-image">
+								<img src={require('../../images/Jai-smiling.jpg')} className="about-img" alt="Jai-smiling" width='1160'/>
+								</div>
+							</div>
 							</div>
 							<div className="card mb-3">
 								<div className="row">
 									<div className="col-md-4">
-										<div className="about-img">
-											<img src={require('../../images/Jai-kneel.JPG')} className="card-img" alt="Jai-kneeling" height='850' width='360'/>
+										<div className="about-image">
+											<img src={require('../../images/Jai-kneel.JPG')} className="card-img" alt="Jai-kneeling" width='260'/>
 										</div>
 									</div>
 									<div className="col-md-7">
@@ -36,7 +38,7 @@ const AboutPage = () => (
 									</div>
 								</div>
 							</div>
-							<div className="card md-3">
+							<div className="card quote">
 								
 							<div className="card-body">
 									
@@ -65,7 +67,7 @@ const AboutPage = () => (
 									<div className="col-md-4">
 										<div className="about-img">
 							
-											<img src={require('../../images/Jai-back.jpeg')} className="card-img" alt="Jai-back" height='250' width='400'/>
+											<img src={require('../../images/Jai-back.jpeg')} className="card-img" alt="Jai-back" width='260'/>
 											</div>
 											
 									</div>
@@ -79,7 +81,7 @@ const AboutPage = () => (
 				
 						
 					</div>
-					<section id="banner" className="section static banner"
+					<section id="about-banner" className=" static"
 					style={{
 						backgroundImage: `url(${Banner})`,
 						backgroundPosition: 'center',
@@ -96,10 +98,9 @@ const AboutPage = () => (
 
 			        </div>
 			    </section>
-				</div>
+				
 			</div>
-        </div>
-        
+       
 );
 
 export default AboutPage;

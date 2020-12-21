@@ -154,7 +154,7 @@ class SignUpFormBase extends Component {
               placeholder="Confirm Password"
             />
           </div>
-          <div className="form-group text-center">
+          {/* <div className="form-group text-center">
           <label>
           Admin:
           <input
@@ -164,7 +164,7 @@ class SignUpFormBase extends Component {
             onChange={this.onChangeCheckbox}
           />
         </label>
-        </div>
+        </div> */}
         </div>
         <button className="btn btn-primary" disabled={isInvalid} type="submit">
           Sign Up
