@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+// import ArtsyGirl from '../../../images/artsy-girl-workout.jpg';
+import Banner from '../../../images/banner-img.jpg';
 
 const Package3 = () => (
             <div className="body">
@@ -11,35 +13,40 @@ const Package3 = () => (
 							This is exactly where I come in to provide the solution for your personal breakthrough. I create a completely individualized plan in a simplified way so you can actually stick to it long-term (both fitness and nutrition).</p>
 							<img src={require('../../../images/fat-to-fit.jpg')}  alt="workout" width='750' />
 
-						<div className="row center">
+						{/* <div className="row center">
 							<h1><strong>$200</strong></h1>
-						</div>
+						</div> */}
 						
 						<div className="row center">
 							<ul class="list-unstyled">
-								<li>6 weeks of one-on-one coaching!</li>
-								<li>Weekly coaching sessions!</li>
-								<li>Personalized fitness, macro and nutrition coaching!</li>
-								<li>Workout & Cardio guides!</li>
+								<li><h3>One-on-one coaching!</h3></li>
+								<li><h3>Weekly coaching sessions!</h3></li>
+								<li><h3>Personalized fitness, macro and nutrition coaching!</h3></li>
+								<li><h3>Workout & Cardio guides!</h3></li>
 							</ul>
-							
+							{/* <a className="btn btn-primary btn-top" href="/register">Click here</a> to set up your free 10 minute consult to decide which nutrition plan will work best for you! */}
 						</div>
 						</div>
 					</div>
-					
-						<div className="container center fadeInDown">
-							<div className="card-group center ">
-								<div className="card col">
-								<img src={require('../../../images/do-something-great-neon.jpg')}  width="300" className="card-img-top" alt="..."/>
-									<div className="card-body">
-										<h1 className="card-title">Card title</h1>
-										<p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+					<div className="container-fluid" style={{
+					backgroundImage: `url(${Banner})`,
+					backgroundPosition: 'center',
+					backgroundSize: 'cover',
+					backgroundRepeat: 'no-repeat'
+				}}>
+							<div className="card-group ">
+								<div className="card">
+							
+									<div className="card-body center">
+									<h2 className="card-title">Set up your free 10 minute personal coaching consult now! </h2>
+										
 										<a className="btn btn-primary btn-top" href="/register">Let's do it!</a>
 									</div>
 								</div>
 								
 							</div>
 						</div>
+						
 					
 				</div>
 				</section>

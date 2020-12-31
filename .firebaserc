@@ -1,6 +1,7 @@
 {
   "projects": {
     "default": "adaptivefitness-e5d0e",
-    "deploy": "adaptivefitness-e5d0e"
+    "deploy": "adaptivefitness-e5d0e",
+    "staging": "adaptivefitness-e5d0e"
   }
 }
