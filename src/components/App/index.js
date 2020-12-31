@@ -10,16 +10,16 @@ import Package2 from '../Packages/Package2';
 import Package3 from '../Packages/Package3';
 
 import RegisterPage  from '../Register';
-import SignUpPage from '../SignUp';
-import SignInPage from '../SignIn';
-import PasswordForgetPage from '../PasswordForget';
-import DashboardPage from '../Dashboard';
-import AccountPage from '../Account';
-import AdminPage from '../Admin';
+// import SignUpPage from '../SignUp';
+// import SignInPage from '../SignIn';
+// import PasswordForgetPage from '../PasswordForget';
+// import DashboardPage from '../Dashboard';
+// import AccountPage from '../Account';
+// import AdminPage from '../Admin';
 import Footer from '../Footer';
 
 import * as ROUTES from '../../constants/routes';
-import { withAuthentication } from '../Session';
+// import { withAuthentication } from '../Session';
 
 const App = () => (
   <Router>
@@ -36,19 +36,19 @@ const App = () => (
       <Route path={ROUTES.PACKAGE3} component={Package3} />
     
       <Route path={ROUTES.REGISTER} component={RegisterPage} />
-      <Route path={ROUTES.SIGN_UP} component={SignUpPage} />
-      <Route path={ROUTES.SIGN_IN} component={SignInPage} />
-      <Route
+      {/* <Route path={ROUTES.SIGN_UP} component={SignUpPage} /> */}
+      {/* <Route path={ROUTES.SIGN_IN} component={SignInPage} /> */}
+      {/* <Route
         path={ROUTES.PASSWORD_FORGET}
         component={PasswordForgetPage}
       />
       <Route path={ROUTES.DASHBOARD} component={DashboardPage} />
       <Route path={ROUTES.ACCOUNT} component={AccountPage} />
       <Route path={ROUTES.ADMIN} component={AdminPage} />
-      
+       */}
       <Footer />
     </div>
   </Router>
 );
 
-export default withAuthentication(App);
+export default App;

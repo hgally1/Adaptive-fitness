@@ -1,4 +1,6 @@
-import React from 'react'
+import React from 'react';
+// import ArtsyGirl from '../../../images/artsy-girl-workout.jpg';
+import Banner from '../../../images/banner-img.jpg';
 
 const Package2 = () => (
             <div className="body">
@@ -12,22 +14,42 @@ const Package2 = () => (
 			                <p className="lead">"Nutrition plans, based on weight and sex, designed for taking the guess work out of what to eat."</p>
 							<img src={require('../../../images/healthy-food.jpg')}  alt="workout" height='650' width='750' />
 
-							<div className="row center">
+							{/* <div className="row center">
 								<h1><strong>$40</strong></h1>
-							</div>
-						
-							<div className="row center">
-								<ul class="list-unstyled">
-									<li>Do on your own!</li>
-									<li>Cost Effecient!</li>
-									<li>Choose from pre-made nutrition guides based on weight & sex</li>
-								</ul>
-							</div>
+							</div> */}
 						</div>
 					</div>
+						<div className="container fadeInDown">
+							<div className=" center">
+								<ul class="list-unstyled">
+									<li><h3>Do On Your Own!</h3></li>
+									<li><h3>Cost Effecient!</h3></li>
+									<li><h3>Nutrition guides based on your weight, sex, & diet preference!</h3></li>
+								</ul>
+							</div>
+						
+
+						</div>
 					
-				
-					<section>
+					<div className="container-fluid" >
+							<div className="card-group "style={{
+					backgroundImage: `url(${Banner})`,
+					backgroundPosition: 'center',
+					backgroundSize: 'cover',
+					backgroundRepeat: 'no-repeat'
+				}}>
+								<div className="card">
+							
+									<div className="card-body center">
+										<h2 className="card-title">Set up your free 10 minute consult to decide which nutrition plan will work best for you!</h2>
+										
+										<a className="btn btn-primary btn-top" href="/register">Let's do it!</a>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+					{/* <section>
 						<div className="container center fadeInDown">
 						<div className="card-group">
 						<div className="row">
@@ -67,7 +89,7 @@ const Package2 = () => (
 						{/* </div>
 						<div className="card-group"> */}
 							
-							<div className="card col-lg-3 col-md-4 col-sm-5">
+							{/* <div className="card col-lg-3 col-md-4 col-sm-5">
 								<img src={require('../../../images/medium-girls.png')} width="200" className="card-img-top" alt="..."/>
 								<div className="card-body">
 									<h2 className="card-title">Women 161-199 lbs</h2>
@@ -82,7 +104,7 @@ const Package2 = () => (
 									<p className="card-text">Fat loss meal plan</p>
 									<a className="btn btn-primary btn-top" href="/register">Let's do it!</a>
 								</div>
-							</div>
+							</div> */}
 							{/* <div className="card col-lg-3 col-md-4 col-sm-5">
 								<img src={require('../../../images/fit-men.png')} width="200" className="card-img-top" alt="..."/>
 								<div className="card-body">
@@ -106,12 +128,12 @@ const Package2 = () => (
 									<p className="card-text">Some quick example text.</p>
 									<a className="btn btn-primary btn-top" href="/register">Let's do it!</a>
 								</div>
-							</div> */}
-							</div>
+							</div> */} 
+							{/* </div>
 						</div>
 						
 						</div>
-						</section>
+						</section> */}
 						
 					</div>
 

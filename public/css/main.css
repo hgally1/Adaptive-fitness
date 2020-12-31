@@ -47,6 +47,9 @@ img{
     max-width: 100%;
     height: 100%;
 }
+iframe{
+    max-height: 100%;
+}
 
 h4 {
     font-size: 16px;
@@ -285,7 +288,7 @@ input.search-form:hover {
     border-radius: 0;
     margin-bottom: 0;
     /* background: rgb(36,0,2); */
-    background: linear-gradient(90deg, rgba(59, 3, 6, 0.657) 60%,  #b90b0bf8 100% );
+    background: linear-gradient(90deg, rgba(59, 3, 6, 0.657) 40%,  #b90b0bf8 100% );
     /* background: rgb(14, 13, 13); */
     
 }
@@ -540,16 +543,16 @@ input.search-form:hover {
     color: #707070;
 }
 
-/* WHY AF */
+/********** WHY AF ************/
 
 
 #adaptfit {
      display:flex;
-    /* align-items:center;
+    align-items:center;
     justify-content:center;
-    flex-direction:column;   */
-    height: 90vh;
-    margin-top: 60px;
+    /* flex-direction:column;   */
+    height: auto;
+    margin-top: 70px;
 }
 
 
@@ -565,27 +568,34 @@ input.search-form:hover {
 #adaptfit p{
     color: #F9FAFB;
     margin: 40px;
-    font-size: 16px;
+    font-size: 18px;
     text-shadow: 1.5px 1.5px 0 #0C0503, 1.5px -1.5px 0 #0C0503, -1.5px 1.5px 0 #0C0503, -1.5px -1.5px 0 #0C0503, 1.5px 0px 0 #0C0503, 0px 1.5px 0 #0C0503, -1.5px 0px 0 #0C0503, 0px -1.5px 0 #0C0503;
 
 }
 
+#adaptfit .btn {
+    border: black 2px solid;
+    
+}
+
+#adaptfit .btn h2{
+    font-size: 20px;
+}
+
 /* TESTIMONIALS */
 
-/* #main-slider {
+ /* #main-slider .container{
+   height: 100vh;
+}  */
+
+
+ /* #main-slider .container  {
     display: flex;
-    justify-content: center;
-    flex-direction: row;
-} */
-
-
-/* #main-slider {
-    /* display: flex; */
-    
+    flex-direction: column;
     /* position: relative; */
     /* margin-top: 50px; */
     /* height: 100vh; */
-
+ /* } */ 
 
 #main-slider h2 {
     color:  #b90b0bf8;
@@ -599,14 +609,14 @@ input.search-form:hover {
     /* line-height: 28px; */
     
 }
-#main-slider .carousel .carousel-content .card {
-    margin-left: 370px;
-    margin-bottom: 200px;
+#main-slider .carousel .card {
+    margin-top: 70px;
+   
 }
 
-#main-slider .carousel .slide-margin {
+/* #main-slider .carousel .slide-margin {
     margin-top: 140px;
-}
+} */
 
 #main-slider .carousel h1 {
     font-size: 64px;
@@ -635,7 +645,7 @@ input.search-form:hover {
 }
 
 #main-slider .carousel .slider-img {
-    text-align: right;
+    /* text-align: right; */
     /* position: absolute; */
     /* height: 130px; */
 }
@@ -650,7 +660,7 @@ input.search-form:hover {
     position: absolute;
     /* width: 50%; */
     display: block !important;
-    height: 530px;
+    /* height: 630px; */
     -webkit-transition: opacity ease-in-out 500ms;
     transition: opacity ease-in-out 500ms;
     display: -webkit-box !important;
@@ -680,11 +690,11 @@ input.search-form:hover {
 #main-slider .prev,
 #main-slider .next {
     position: absolute;
-    /* top: 50%; */
+    top: 390%;
     background-color: #b90b0bf8;
     color: #fff;
     display: inline-block;
-    margin-top: -325px;
+    margin-bottom: 625px;
     height: 40px;
     line-height: 40px;
     width: 40px;
@@ -711,7 +721,8 @@ input.search-form:hover {
     margin: 0;
     left: 0;
     width: 100%;
-    bottom: 80px;
+    /* bottom: 80px; */
+    position: relative;
 }
 
 #main-slider .carousel-indicators li {
@@ -747,13 +758,15 @@ input.search-form:hover {
     -webkit-animation: fadeInUp 300ms linear 1200ms both;
     animation: fadeInUp 300ms linear 1200ms both;
 }
-
+ /* #main-slider iframe {
+     background-size: 50%;
+ } */
 /* .slider-img-1 {
     background-image: url(https://images.unsplash.com/photo-1549060279-7e168fcee0c2?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jonathan-borba-zfPOelmDc-M-unsplash.jpg);
 } */
-.slider-img-2 {
+/* .slider-img-2 {
     background-image: url(https://images.unsplash.com/photo-1549060279-7e168fcee0c2?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=jonathan-borba-zfPOelmDc-M-unsplash.jpg);
-}
+} */
 
 
 /* Instagram */
@@ -762,15 +775,15 @@ input.search-form:hover {
     height: 90vh;
 } */
 
-/* Sign Up Banner */
 
-/* .banner {
-    background-image: url(https://heidigally.files.wordpress.com/2020/11/fitness-3167418_1280.jpg);
-    
-} */
 
-#banner {
+/************* Sign Up Banner *************/
+
+
+#banner .container {
     display: flex;
+    align-content: center;
+    justify-content: center;
     /* height: 50vh; */
     color: #fff;
     text-align: center;
@@ -798,9 +811,29 @@ input.search-form:hover {
 #packages {
     padding: 1px;
 }
+
+#packages .container-fluid  {
+    margin-top: 80px;
+}
+
+#packages .container-fluid .card .card-body{
+    margin-top: 90px;
+    /* height: 400px; */
+    background-color: black;
+    opacity: 0.9;
+}
+#packages .container-fluid .card .card-body h2 {
+    padding-top: 15px;
+    font-size: 27px;
+    /* text-shadow: 1.5px 1.5px 0 #0C0503, 1.5px -1.5px 0 #0C0503, -1.5px 1.5px 0 #0C0503, -1.5px -1.5px 0 #0C0503, 1.5px 0px 0 #0C0503, 0px 1.5px 0 #0C0503, -1.5px 0px 0 #0C0503, 0px -1.5px 0 #0C0503; */
+    
+}
+#packages .container-fluid .card .card-body .btn {
+    border: black 2px solid;
+}
 #packages .card {
     height: 350px;
-    border: 1px solid #b90b0bf8;
+    border: 3px solid #b90b0bf8;
     padding: 15px; 
 }
 #packages .card img {
@@ -811,8 +844,9 @@ input.search-form:hover {
     font-size: 18px;
 }
 #packages p {
-    font-size: 16px;
+    font-size: 18px;
 }
+
 
 
 /*************************
@@ -825,6 +859,9 @@ input.search-form:hover {
     border: #581111 5px solid;
    
 }
+/* .about-img {
+    position: relative;
+} */
 
 .about-content{
     background-color: black;
@@ -886,7 +923,7 @@ input.search-form:hover {
 ********* Admin CSS ******
 **************************/
 
-.admin  {
+/* .admin  {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -918,7 +955,7 @@ input.search-form:hover {
     background-color: rgb(63, 4, 4);
     opacity: .9;
     
-}
+} */
 
 /* #dash .dashboard .card-body {
     margin-top: 30px;
@@ -928,7 +965,7 @@ input.search-form:hover {
 
 
 
-.large-title{
+/* .large-title{
     text-align: center;
     margin-bottom: 70px;
     margin-top: 50px;
@@ -946,7 +983,7 @@ input.search-form:hover {
     line-height: 26px;
     color: #989898;
     font-weight: 300;
-}
+} */
 
 
 /*********************
@@ -956,8 +993,8 @@ input.search-form:hover {
 #login-page {
     background-image: url(https://images.unsplash.com/photo-1507652955-f3dcef5a3be5?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&dl=sydney-rae-geM5lzDj4Iw-unsplash.jpg);
     background-size: cover;
-    height: 100vh;
-    background-position: relative;
+    height: 120vh;
+    background-position: center;
 }
 
 .login  {
@@ -985,6 +1022,8 @@ input.search-form:hover {
     background-color: rgb(63, 4, 4);
     opacity: .8;
     margin-right: 20px;
+    padding: 50px;
+    /* position: center; */
     
 }
 
@@ -1054,33 +1093,38 @@ input.search-form:hover {
 ************************/
 .footer-logo{
     display: inline-block;
-    height: 150px;
+    height: 90px;
+    /* max-width: 50px; */
 }
 #bottom {
-    height: 35vh;
-    background:#000;
+    height: 25vh;
+    /* background:#000; */
+    background: linear-gradient(90deg, rgba(59, 3, 6, 0.657) 40%,  #b90b0bf8 100% );
     /* border-bottom: 5px solid #b63217d3;
     border-top: 5px solid #b63217d3; */
-    font-size: 17px;
-    padding-top: 50px;
+    font-size: 20px;
+    
+    padding-top: 20px;
+    margin-top: 5px;
+    text-shadow: 1.5px 1.5px 0 #0C0503, 1.5px -1.5px 0 #0C0503, -1.5px 1.5px 0 #0C0503, -1.5px -1.5px 0 #0C0503, 1.5px 0px 0 #0C0503, 0px 1.5px 0 #0C0503, -1.5px 0px 0 #0C0503, 0px -1.5px 0 #0C0503;
    
 }
 
 #bottom .footer-bar {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
-    flex-direction: row;
+    /* flex-direction: column; */
 }
 
-#bottom h3 {
+/* #bottom li {
     margin-top: 0;
     margin-bottom: 15px;
     text-transform: uppercase;
-    font-size: 14px;
+    font-size: 18px;
     color: #ffffff ;
     font-weight: 700;
-}
+} */
 
 #bottom ul {
     list-style: none;
@@ -1089,23 +1133,23 @@ input.search-form:hover {
 }
 
 #bottom ul li {
-    display: block;
+    display: flex;
     padding: 4px 0;
 }
 
-#bottom ul li a {
+/* #bottom ul li a {
     color: #808080;
     font-weight: 300;
 }
 
 #bottom ul li a:hover {
     color: #b90b0bf8;
-}
+} */
 
-#bottom .widget {
+/* #bottom .widget {
     margin-bottom: 0;
     padding-left: 15px;
-}
+} */
 
 /* #footer {
     padding-top: 30px;
