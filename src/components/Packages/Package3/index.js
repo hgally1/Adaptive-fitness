@@ -20,15 +20,16 @@ const Package3 = () => (
 						<div className="row center">
 							<ul class="list-unstyled">
 								<li><h3>One-on-one coaching!</h3></li>
-								<li><h3>Weekly coaching sessions!</h3></li>
-								<li><h3>Personalized fitness, macro and nutrition coaching!</h3></li>
+								<li><h3>Regular phone, or Zoom, calls with Jai!</h3></li>
+								<li><h3>Personalized fitness and nutrition coaching!</h3></li>
+								<li><h3>Easy to use app!</h3></li>
 								<li><h3>Workout & Cardio guides!</h3></li>
 							</ul>
-							{/* <a className="btn btn-primary btn-top" href="/register">Click here</a> to set up your free 10 minute consult to decide which nutrition plan will work best for you! */}
+							<a className="btn btn-primary btn-top" href="/register"><h3><u>Get started now!</u></h3></a>
 						</div>
 						</div>
 					</div>
-					<div className="container-fluid" style={{
+					{/* <div className="container-fluid" style={{
 					backgroundImage: `url(${Banner})`,
 					backgroundPosition: 'center',
 					backgroundSize: 'cover',
@@ -38,14 +39,14 @@ const Package3 = () => (
 								<div className="card">
 							
 									<div className="card-body center">
-									<h2 className="card-title">Set up your free 10 minute personal coaching consult now! </h2>
+									<h2 className="card-title">Set up your free 10 minute consult now! </h2>
 										
 										<a className="btn btn-primary btn-top" href="/register">Let's do it!</a>
 									</div>
 								</div>
 								
 							</div>
-						</div>
+						</div> */}
 						
 					
 				</div>
@@ -54,4 +55,4 @@ const Package3 = () => (
         );
   
 
-export default Package3
+export default Package3;

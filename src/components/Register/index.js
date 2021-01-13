@@ -8,14 +8,15 @@ const RegisterPage = () => (
          
             <h1><u>STEP 1: </u></h1>
             <br />
-            <a rel="noopener noreferrer" target="_blank" href="https://calendly.com/adaptivefitnessjai/1stcall?" className="btn btn-primary btn-top">Schedule Free 10 Minute Consult</a>
+            <a href="/application" className="btn btn-primary btn-top">Fill Out Application Form</a>
             <br />
+            {/* trigger thank you video that Jai will do */}
             <h1><u>STEP 2: </u></h1>
             <br />
-            <a rel="noopener noreferrer" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSchh3-JGUYm9_vXAjYPpiQ4etPyfE8fxI8R7uwJSv1BRooXzA/viewform" className="btn btn-primary btn-top">Fill Out Consultation Form</a>
+            <p className="btn btn-primary btn-top">Be On The Lookout For An Email!</p>
             <br />
-            <h1><u>STEP 3:</u></h1>
-            
+            <h1><u>STEP 3: </u></h1>
+             <br />
             <p className="btn btn-primary btn-top">Trust The Process!</p>
           </div>
         </div>
