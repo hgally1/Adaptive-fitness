@@ -5,7 +5,7 @@ const ServicesSection = (props) => {
 	return (
 		<div >
 			<div className="features">
-				<div className=" col-md-4 col-sm-6 fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" >
+				<div className=" col-md-6 col-sm-6 fadeInDown" data-wow-duration="1000ms" data-wow-delay="600ms" >
 				<div className="inner">
 					<div className="feature-wrap">
 						<div className="img">

@@ -11,7 +11,7 @@ const Package2 = () => (
 					<div className="container">
 			            <div className="center fadeInDown">
 							<h1><u>Nutrition Plans</u></h1> 
-			                <p className="lead">"Nutrition plans, based on weight and sex, designed for taking the guess work out of what to eat."</p>
+			                <p className="lead">Custom nutrition plans, based on age, weight, sex and preference, designed for taking the guess work out of what to eat.</p>
 							<img src={require('../../../images/healthy-food.jpg')}  alt="workout" height='650' width='750' />
 
 							{/* <div className="row center">
@@ -22,16 +22,20 @@ const Package2 = () => (
 						<div className="container fadeInDown">
 							<div className=" center">
 								<ul class="list-unstyled">
-									<li><h3>Do On Your Own!</h3></li>
-									<li><h3>Cost Effecient!</h3></li>
-									<li><h3>Nutrition guides based on your weight, sex, & diet preference!</h3></li>
+									<li><h3>Custom made nutrition plan just for YOU!</h3></li>
+									{/* <li><h3>Time Efficent!</h3></li> */}
+									<li><h3>Easy to use app!</h3></li>
+									<li><h3>No fuss grocery lists and recipes!</h3></li>
+									<li><h3>Cost effecient!</h3></li>
+									
 								</ul>
+								<a className="btn" href="/register"><h3><u>Get started now!</u></h3></a>
 							</div>
-						
+							
 
 						</div>
 					
-					<div className="container-fluid" >
+					{/* <div className="container-fluid" >
 							<div className="card-group "style={{
 					backgroundImage: `url(${Banner})`,
 					backgroundPosition: 'center',
@@ -48,7 +52,7 @@ const Package2 = () => (
 								</div>
 								
 							</div>
-						</div>
+						</div> */}
 					{/* <section>
 						<div className="container center fadeInDown">
 						<div className="card-group">
