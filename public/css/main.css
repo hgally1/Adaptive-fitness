@@ -582,17 +582,16 @@ input.search-form:hover {
 /* TESTIMONIALS */
 
  /* #main-slider .container{
-   height: 100vh;
-}  */
+   height: 100vh;*/
+}  
 
 
- /* #main-slider .container  {
+ #main-slider .container  {
     display: flex;
-    flex-direction: column;
+    justify-content: left;
     /* position: relative; */
-    /* margin-top: 50px; */
-    /* height: 100vh; */
- /* } */ 
+    
+ }  
 
 #main-slider h2 {
     color:  #b90b0bf8;
@@ -606,8 +605,9 @@ input.search-form:hover {
     /* line-height: 28px; */
     
 }
-#main-slider .carousel .card {
+#main-slider .carousel {
     margin-top: 70px;
+    margin-right: auto;
    
 }
 
@@ -651,7 +651,7 @@ input.search-form:hover {
     /* background-position: 100%; */
     /* background-repeat: no-repeat; */
     /* background-size: cover; */ 
-    left: 0 !important;
+    /* left: 0 !important; */
     opacity: 0;
     top: 0;
     position: absolute;
@@ -671,11 +671,16 @@ input.search-form:hover {
     -ms-flex-pack: center;
     justify-content: center;
 }
+#main-slider .carousel .item h2{
+    text-shadow: 1.5px 1.5px 0 #0C0503, 1.5px -1.5px 0 #0C0503, -1.5px 1.5px 0 #0C0503, -1.5px -1.5px 0 #0C0503, 1.5px 0px 0 #0C0503, 0px 1.5px 0 #0C0503, -1.5px 0px 0 #0C0503, 0px -1.5px 0 #0C0503;
 
-#main-slider .carousel .item:first-child {
+}
+    #main-slider .carousel .item:first-child {
     top: auto;
     position: relative;
 }
+
+
 
 #main-slider .carousel .item.active {
     opacity: 1;
@@ -699,26 +704,34 @@ input.search-form:hover {
     text-align: center;
     border-radius: 4px;
     z-index: 5;
-}*/
+} */
 
-#main-slider .carousel-indicators .prev,
-#main-slider .carousel-indicators .next {
-    background-color: #b90b0bf8;
-    color: #fff;
-    display: flex;
+/* #main-slider .prev,
+#main-slider .next {
+    position: relative;
+    background-color: #0a0707f8;
+    color: #b90b0bf8;
+    display: inline-block;
+    justify-content: center;
+    margin-left: 22rem;
+    margin-right: auto;
     height: 40px;
     line-height: 40px;
     width: 40px;
+    
     line-height: 40px;
     text-align: center;
     border-radius: 5px;
-   
-}
-
-#main-slider .prev:hover,
+    z-index: 5;
+} */
+/* #main-slider .prev .icon,
+#main-slider .next .icon{
+    color: #b90b0bf8;
+} */
+/* #main-slider .prev:hover,
 #main-slider .next:hover {
     background-color: #000;
-}
+} */
 
 
 

@@ -103,7 +103,7 @@ class Home extends Component {
 								<div className="center fadeInDown">
 									<div className="content" >
 									<h2><strong>Why Adaptive Fitness?</strong></h2>
-									 <img src={require('../../images/Logo.png')} className="logo" alt="logo" height='250' width='250' />  
+									 <img src={require('../../images/Logo.png')} className="shadow" alt="logo" height='250' width='250' />  
 									<p className="lead"><strong>MOST FITNESS AND DIET PLANS FAIL BECAUSE THEY'RE TOO GENERIC. HOW GOOD WOULD IT FEEL TO FINALLY HAVE THE BODY YOU WANT AND NEVER STRESS ABOUT WHAT TO EAT OR HOW TO EXERCISE EVER AGAIN?....</strong> 
 Unlike most coaching services, my personal coaching program is customized to fit you, your schedule, your preferences, and your level of experience. My mission is simple: To bring an effective, personalized approach to health and fitness that anyone can use to get in better shape — even if they’ve tried and failed before.</p>
 									<a className="btn btn-primary btn-top" href="/register">Get Started Today!</a>
@@ -156,6 +156,7 @@ Unlike most coaching services, my personal coaching program is customized to fit
 								<ol className="carousel-indicators">
 									<li data-target="#main-slider" data-slide-to="0" className="active"></li>
 									<li data-target="#main-slider" data-slide-to="1"></li>
+									<li data-target="#main-slider" data-slide-to="2"></li>
 								</ol>
 								<div className="carousel-inner">
 
@@ -183,13 +184,17 @@ Unlike most coaching services, my personal coaching program is customized to fit
 										</div>
 									</div>
 									</div> */}
-									<div className="item active">
+									<div className="item active" data-interval="10000">
 										<div className="container ">
-											
+										
 												{/* <div className="row">
 												
 														<div className="col"> */}
 											<div className="carousel-content " >
+											<div class="carousel-caption d-none d-md-block">
+											<h5>First slide label</h5>
+											<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+										</div>
 												<div className="card"  >
 													<div className="row ">
 														<div className="col-md-8">
@@ -211,10 +216,32 @@ Unlike most coaching services, my personal coaching program is customized to fit
 											</div>
 										</div>
 									</div>
+									<div className="container item " data-interval="10000">
+                                <div className="carousel-content center" >
+								<div class="carousel-caption d-none d-md-block">
+											<h5>First slide label</h5>
+											<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+										</div>
+                                    <div className="card"  >
+                                        <div className="row ">
+                                            <div className="col">
+                                                
+                                                <img src={require('../../images/testimonial-pic-3.jpeg')} className="d-block w-100" width="630"  />
+                                            
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
 
-									<div className="container item ">
-										
+									<div className="container item " data-interval="10000">
+									<div class="carousel-caption d-none d-md-block">
+											<h5>First slide label</h5>
+											<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+										</div>
 										<div className="carousel-content">
+											
 											<div className="card">
 												<div className="row">
 													{/* <div className="col"> */}

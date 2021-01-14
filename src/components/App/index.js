@@ -8,7 +8,7 @@ import ServicesPage from '../Services';
 import ApplicationPage from '../Application';
 import Package2 from '../Packages/Package2';
 import Package3 from '../Packages/Package3';
-
+import TestimonialPage from '../Testimonials';
 import RegisterPage  from '../Register';
 import Thanks from '../Thanks';
 // import SignInPage from '../SignIn';
@@ -37,7 +37,7 @@ const App = () => (
       <Route path={ROUTES.APPLICATION} component={ApplicationPage} />
       <Route path={ROUTES.THANKS} component={Thanks} />
       <Route path={ROUTES.REGISTER} component={RegisterPage} />
-      {/* <Route path={ROUTES.SIGN_UP} component={SignUpPage} /> */}
+      <Route path={ROUTES.TESTIMONIALS} component={TestimonialPage} />
       {/* <Route path={ROUTES.SIGN_IN} component={SignInPage} /> */}
       {/* <Route
         path={ROUTES.PASSWORD_FORGET}
