@@ -12,7 +12,7 @@ const ServicesSection = (props) => {
 							<img src={props.img} alt="service-img"></img>
 						</div>
 						<div>
-						<h2>{props.title}</h2>
+						<h4>{props.title}</h4>
 						<p>{props.desc}</p>
 						</div>
 					</div>	

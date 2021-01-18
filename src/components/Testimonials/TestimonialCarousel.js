@@ -8,95 +8,156 @@ class TestimonialCarousel extends Component {
                 <div id="main-slider" className="static">
 					<div className="container fadeInDown">
 						<div className="center fadeInDown">
-							<h2>Testimonials</h2>
+							<h1>Testimonials</h1>
 							</div>
 							<div className="carousel slide">
 								<ol className="carousel-indicators">
 									<li data-target="#main-slider" data-slide-to="0" className="active"></li>
 									<li data-target="#main-slider" data-slide-to="1"></li>
 									<li data-target="#main-slider" data-slide-to="2"></li>
+                                    <li data-target="#main-slider" data-slide-to="3"></li>
+									<li data-target="#main-slider" data-slide-to="4"></li>
 								</ol>
 								<div className="carousel-inner">
 
 									<div className="item active" data-interval="10000">
-                                    
-										<div className="container-fluid ">
-											<div className="carousel-content " >
-											
-												<div className=""  >
-                                                <div className="carousel-caption d-none d-md-block">
-                                                    <h2>Down over 100lbs!</h2>
+									<div className="container ">
+										<div className="caption ">
+                                                    <h2>Down over 140lbs!</h2>
                                                     
                                                 </div>
-                                                
-													<div className=" ">
-                                                    <div className="col-md-4">
-															<div className="">
-																<iframe src="https://player.vimeo.com/video/496070202"  width="280" height="540" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+											<div className="carousel-content " >
+                                                <div className="row ">
+                                                <div className="">
+                                                    <div className="col-md-3">
+															
+																<iframe src="https://player.vimeo.com/video/496070202" className="d-block w-100" width="240" height="440" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
 													
 															</div>
 														
 													
-														</div>
-														<div className="col-md-5">
+													
+														<div className="col-md-6">
 															
-															<img src={require('../../images/Angie-before-after.JPG')}  width="540"  />
+															<img src={require('../../images/Angie-before-after.JPG')} className="d-block w-100" width="440"  />
                                                             
 														</div>
                                                         <div className="col-md-3">
-                                                        <img src={require('../../images/Angie-smiling.JPG')}  width="265" />
+                                                        <img src={require('../../images/Angie-smiling.JPG')} className="d-block w-100" width="290" />
                                                         </div>
-														
+                                                        </div>	
 												
 													</div>
-												</div>
+												
 											</div>
 										</div>
-									</div>
-									<div className="container item " data-interval="10000">
-                                <div className="carousel-content center" >
-								
-                                    <div className="card"  >
-                                        <div className=" ">
-                                            <div className="col">
-                                                
-                                                <img src={require('../../images/testimonial-pic-3.jpeg')} className="d-block w-100" width="530"  />
-                                                <div className="carousel-caption d-none d-md-block">
-                                                    <h2>Down 33lbs!</h2>
+										
+										
+                                    </div>
+									
+                                        <div className="item " data-interval="10000">
+										<div className="container ">
+										<div className="caption">
+                                                    <h2>Down 30lbs in 3 months and still losing!</h2>
                                                     
                                                 </div>
-                                            </div>
-                                            
+                                            <div className="carousel-content">
+                                                
+											    <div className="row">
+												<div className="">
+													
+                                                    <div className="col-md-6">
+															
+															<img src={require('../../images/IMG_0380.jpg')} className="d-block w-100" width="440"  />
+                                                            
+													</div>
+                                                        
+														
+													<div className="col-md-6">
+														<img src={require('../../images/IMG_0379-ba.jpg')} className="d-block w-100" width="440"  />
+													</div>
+													
+												    </div>
+													
+											    </div>
+										    </div>
                                         </div>
-                                    </div>
-                                </div>
-                            </div> 
+										
+										</div>
+									 
 
-									<div className="container item " data-interval="10000">
-									
+									<div className="item " data-interval="10000">
+									<div className="container ">
+									<div className="caption">
+                                                    <h2>Down over 28lbs!</h2>
+                                                    
+                                                </div>
 										<div className="carousel-content">
-											
-											<div className="card">
+                                        
+											<div className="row">
 												
 													{/* <div className="col"> */}
-                                                    <div className="col-md-7">
+                                                    <div className="">
+                                                    <div className="col-md-6">
 															
-															<img src={require('../../images/Angie-before-after.JPG')}  width="590"  />
-                                                            <div className="carousel-caption d-none d-md-block">
-                                                    <h2>Down over 40lbs!</h2>
-                                                    
-                                                </div>
+															<img src={require('../../images/IMG_0153.jpg')} className="d-block w-100" width="430"  />
+                                                            
 														</div>
+                                                        
+                                                        
 														{/* Angie down 100+lbs--Braz down 40+lbs--other 33+lbs down */}
-														<div className="col-md-5">
-														<div className="card-body center">
-															<iframe src="https://player.vimeo.com/video/496069231"  width="340" height="538" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+														<div className="col-md-6">
+														
+															<iframe src="https://player.vimeo.com/video/496069231" className="d-block w-100" width="240" height="390" frameBorder="0" allow="autoplay; fullscreen" allowFullScreen></iframe>
 														</div>
 													{/* </div> */}
 												</div>
 											</div>
 										</div>
+										</div>
 									</div>
+                                    <div className="item " data-interval="10000">
+									<div className="container ">
+									<div className="caption">
+                                                    <h2>Down 40lbs!</h2>
+                                                    
+                                                </div>
+                                <div className="carousel-content center" >
+								
+                                    <div className="row"  >
+                                        <div className=" ">
+                                            <div className="col">
+                                                
+                                                <img src={require('../../images/testimonial-pic-3.jpeg')} className="d-block w-100" width="410"  />
+                                               
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+							</div>
+							<div className="item " data-interval="10000">
+									<div className="container ">
+									<div className="caption">
+                                                    <h2>Down over 120lbs and still going!</h2>
+                                                    
+                                                </div>
+                                <div className="carousel-content center" >
+								
+                                    <div className="row"  >
+                                        <div className=" ">
+                                            <div className="col">
+                                                
+                                                <img src={require('../../images/heidi-before-after.png')} className="d-block w-130" width="440"  />
+                                               
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+							</div>
 								</div>
 							</div>
 
