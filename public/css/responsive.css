@@ -2,13 +2,13 @@
 /* @media screen and (max-width: 1199px) {
   #primary { width:67%; }
   #secondary { width:30%; margin-left:3%;}  
-}
+} */
 
 /* Media Queries: Tabled Portrait */
-/* @media screen and (max-width: 768px) {
-  #primary { width:100%; }
-  #secondary { width:100%; margin:0; border:none; } */
-/* } */ 
+ /* @media screen and (max-width: 768px) {
+  #primary { width:90%; }
+  #secondary { width:90%; margin:0; border:none; } 
+ }   */
 /* @media (min-width: 340px) { body {font-size:0.75rem;} }
 
 @media (min-width: 640px) { body {font-size:1rem;} }  */
@@ -114,12 +114,12 @@
   height: 35vh;
 } */
 
-#testimonials-slider .carousel .item{
-  height: 300px;
-}
-#testimonials .carousel .item{
-height: 300px;
-}
+/* #main-slider .carousel .item
+{
+  width: 50%;
+ height: 50%;
+} */
+
 
 /* .footer-logo{
   margin-bottom: 30px;
@@ -128,9 +128,9 @@ height: 300px;
 /* xs */
 @media (max-width: 359px){
   body {font-size:0.75rem;}
-  #bottom .col-sm-6{
+  /* #bottom .col-sm-6{
     text-align:center;
-}
+} */
 
  /* #bottom .pull-right{
     float: none !important;
@@ -138,5 +138,9 @@ height: 300px;
 
 #bottom {
   height: 45vh;
+  /* width:auto; */
 }
+/* .footer-logo{
+  margin-bottom: 30px;
+} */
 }

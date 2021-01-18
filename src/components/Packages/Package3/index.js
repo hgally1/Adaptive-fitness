@@ -1,6 +1,6 @@
 import React from 'react';
 // import ArtsyGirl from '../../../images/artsy-girl-workout.jpg';
-import Banner from '../../../images/banner-img.jpg';
+//import Banner from '../../../images/banner-img.jpg';
 
 const Package3 = () => (
             <div className="body">
@@ -19,34 +19,18 @@ const Package3 = () => (
 						
 						<div className="row center">
 							<ul class="list-unstyled">
-								<li><h3>One-on-one coaching!</h3></li>
-								<li><h3>Regular phone, or Zoom, calls with Jai!</h3></li>
-								<li><h3>Personalized fitness and nutrition coaching!</h3></li>
-								<li><h3>Easy to use app!</h3></li>
-								<li><h3>Workout & Cardio guides!</h3></li>
+								<li><p>One-on-one coaching!</p></li>
+								<li><p>Regular phone, or Zoom, calls with Jai!</p></li>
+								<li><p>Personalized fitness and nutrition coaching!</p></li>
+								<li><p>Easy to use app!</p></li>
+								<li><p>Workout & Cardio guides!</p></li>
+								<li><p>and MORE!</p></li>
 							</ul>
-							<a className="btn btn-primary btn-top" href="/register"><h3><u>Get started now!</u></h3></a>
+							<a className="btn btn-primary btn-top" href="/register"><h3>Get started now!</h3></a>
 						</div>
 						</div>
 					</div>
-					{/* <div className="container-fluid" style={{
-					backgroundImage: `url(${Banner})`,
-					backgroundPosition: 'center',
-					backgroundSize: 'cover',
-					backgroundRepeat: 'no-repeat'
-				}}>
-							<div className="card-group ">
-								<div className="card">
-							
-									<div className="card-body center">
-									<h2 className="card-title">Set up your free 10 minute consult now! </h2>
-										
-										<a className="btn btn-primary btn-top" href="/register">Let's do it!</a>
-									</div>
-								</div>
-								
-							</div>
-						</div> */}
+					
 						
 					
 				</div>

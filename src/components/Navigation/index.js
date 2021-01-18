@@ -16,6 +16,7 @@ const Navigation = () => (
                 <div className="navbar-header">
                     <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                       Menu
+                      
                         <span className="sr-only">Toggle navigation</span>
                         
                     </button>
@@ -31,6 +32,7 @@ const Navigation = () => (
                         <li className="home-nav "><Link to={ROUTES.HOME}>Home</Link></li>
                         <li className=""><Link to={ROUTES.ABOUT}>About</Link></li>
                         <li className=""><Link to={ROUTES.SERVICES}>Services</Link></li>
+                        <li className=""><Link to={ROUTES.TESTIMONIALS}>Testimonials</Link></li>
                         <li className=""><Link to={ROUTES.REGISTER}>Apply</Link></li>
                         {/* <li className=""><Link to={ROUTES.SIGN_IN}>Sign In</Link></li> */}
                         {/* <li className=""><a className="fa fa-instagram" rel="noopener noreferrer" target="_blank" href="https://www.instagram.com/adaptivefitt/"></a></li> */}
